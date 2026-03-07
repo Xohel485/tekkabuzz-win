@@ -123,32 +123,51 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Licences & Responsible Gaming */}
-        <div className="border-t border-border pt-6 mb-6">
-          <div className="flex flex-wrap justify-center items-center gap-6">
-            <div className="flex flex-col items-center gap-1">
-              <img src={TRUST_ICONS.LICENSE_CURACAO} alt="Gaming Curacao License" className="h-8 md:h-10 object-contain opacity-80" />
-              <span className="text-[9px] text-muted-foreground">Gaming Curaçao</span>
+        {/* Gaming Licence */}
+        <div className="border-t border-border pt-6 mb-4">
+          <h4 className="font-heading text-xs font-bold text-primary mb-3 tracking-wider uppercase text-center">Gaming Licence</h4>
+          <div className="flex justify-center items-center gap-6">
+            <div className="flex flex-col items-center gap-1.5">
+              <img src={TRUST_ICONS.LICENSE_CURACAO} alt="Gaming Curacao License" className="h-10 md:h-12 object-contain" />
+              <span className="text-[10px] text-muted-foreground">Gaming Curaçao</span>
             </div>
-            <div className="flex flex-col items-center gap-1">
-              <img src={TRUST_ICONS.LICENSE_3} alt="License Certificate" className="h-8 md:h-10 object-contain opacity-80" />
-              <span className="text-[9px] text-muted-foreground">Licensed</span>
+            <div className="flex flex-col items-center gap-1.5">
+              <img src={TRUST_ICONS.LICENSE_3} alt="License Certificate" className="h-10 md:h-12 object-contain" />
+              <span className="text-[10px] text-muted-foreground">Licensed & Certified</span>
             </div>
-            <div className="flex flex-col items-center gap-1">
-              <img src={TRUST_ICONS.CAZVIP} alt="CazVIP Partner" className="h-8 md:h-10 object-contain opacity-80" />
-              <span className="text-[9px] text-muted-foreground">CazVIP</span>
+          </div>
+        </div>
+
+        {/* Responsible Gaming */}
+        <div className="border-t border-border pt-4 mb-4">
+          <h4 className="font-heading text-xs font-bold text-primary mb-3 tracking-wider uppercase text-center">Responsible Gaming</h4>
+          <div className="flex justify-center items-center gap-6">
+            <div className="flex flex-col items-center gap-1.5">
+              <img src={TRUST_ICONS.GAMCARE} alt="GamCare Certified" className="h-8 md:h-10 object-contain" />
+              <span className="text-[10px] text-muted-foreground">GamCare</span>
             </div>
-            <div className="flex flex-col items-center gap-1">
-              <img src={TRUST_ICONS.GAMCARE} alt="GamCare Certified" className="h-6 md:h-8 object-contain opacity-80" />
-              <span className="text-[9px] text-muted-foreground">GamCare</span>
+            <div className="flex flex-col items-center gap-1.5">
+              <img src={TRUST_ICONS.AGE_18} alt="18+ Only" className="h-8 md:h-10 object-contain" />
+              <span className="text-[10px] text-muted-foreground">18+ Only</span>
             </div>
-            <div className="flex flex-col items-center gap-1">
-              <img src={TRUST_ICONS.AGE_18} alt="18+ Only" className="h-6 md:h-8 object-contain opacity-80" />
-              <span className="text-[9px] text-muted-foreground">18+ Only</span>
+            <div className="flex flex-col items-center gap-1.5">
+              <img src={TRUST_ICONS.RESP_GAMBLING} alt="Responsible Gambling" className="h-8 md:h-10 object-contain" />
+              <span className="text-[10px] text-muted-foreground">Play Responsibly</span>
             </div>
-            <div className="flex flex-col items-center gap-1">
-              <img src={TRUST_ICONS.RESP_GAMBLING} alt="Responsible Gambling" className="h-6 md:h-8 object-contain opacity-80" />
-              <span className="text-[9px] text-muted-foreground">Responsible Gaming</span>
+          </div>
+        </div>
+
+        {/* Gaming Alliance */}
+        <div className="border-t border-border pt-4 mb-6">
+          <h4 className="font-heading text-xs font-bold text-primary mb-3 tracking-wider uppercase text-center">Gaming Alliance</h4>
+          <div className="flex justify-center items-center gap-6">
+            <div className="flex flex-col items-center gap-1.5">
+              <img src={TRUST_ICONS.CAZVIP} alt="CazVIP Partner" className="h-10 md:h-12 object-contain" />
+              <span className="text-[10px] text-muted-foreground">CazVIP Partner</span>
+            </div>
+            <div className="flex flex-col items-center gap-1.5">
+              <img src={TRUST_ICONS.SUPPORT_24H} alt="24/7 Support" className="h-10 md:h-12 object-contain" />
+              <span className="text-[10px] text-muted-foreground">24/7 Support</span>
             </div>
           </div>
         </div>
