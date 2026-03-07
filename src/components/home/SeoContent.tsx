@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function SeoContent() {
   return (
     <section className="py-10 md:py-16 px-4 md:px-8 lg:px-16 bg-background">
-      <div className="max-w-4xl mx-auto prose prose-invert break-words overflow-hidden text-center md:text-left">
+      <div className="max-w-4xl mx-auto prose prose-invert break-words overflow-hidden text-center">
         <h2 className="font-heading text-xl md:text-3xl font-bold text-foreground mb-6 md:mb-8">
           About TekkaBuzz.win — Bangladesh's Most Trusted Online Casino
         </h2>
