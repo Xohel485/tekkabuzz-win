@@ -16,10 +16,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16">
+    <nav className="sticky top-0 z-50 bg-background border-b border-border">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-14 md:h-16">
         <Link to="/" className="flex-shrink-0">
-          <img src={IMAGES.LOGO_HEADER} alt="TekkaBuzz Logo" className="h-10 object-contain" />
+          <img src={IMAGES.LOGO_HEADER} alt="TekkaBuzz Logo" className="h-8 md:h-10 object-contain" />
         </Link>
 
         {/* Desktop nav */}
@@ -52,38 +52,38 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="lg:hidden text-foreground p-2"
+          className="lg:hidden text-foreground p-2 rounded-md bg-secondary border border-border"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
-          {open ? <X size={24} /> : <Menu size={24} />}
+          {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
       {/* Mobile menu */}
       {open && (
-        <div className="lg:hidden fixed inset-0 top-16 bg-background/98 backdrop-blur-md z-40 flex flex-col p-8 gap-4">
+        <div className="lg:hidden fixed inset-0 top-14 bg-background z-40 flex flex-col p-6 gap-3 overflow-y-auto">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors py-2 border-b border-border"
+              className="text-base font-medium text-muted-foreground hover:text-primary transition-colors py-3 border-b border-border"
               onClick={() => setOpen(false)}
             >
               {link.label}
             </Link>
           ))}
-          <div className="flex gap-3 mt-6">
+          <div className="flex gap-3 mt-4">
             <Link
               to="/login"
-              className="flex-1 text-center border-2 border-primary text-primary rounded-lg px-5 py-3 font-bold hover:bg-primary hover:text-primary-foreground transition-all"
+              className="flex-1 text-center border-2 border-primary text-primary rounded-lg px-4 py-3 font-bold hover:bg-primary hover:text-primary-foreground transition-all"
               onClick={() => setOpen(false)}
             >
               Login
             </Link>
             <Link
               to="/register"
-              className="flex-1 text-center bg-primary text-primary-foreground rounded-lg px-5 py-3 font-bold hover:bg-gold-hover transition-all gold-shimmer"
+              className="flex-1 text-center bg-primary text-primary-foreground rounded-lg px-4 py-3 font-bold hover:bg-gold-hover transition-all gold-shimmer"
               onClick={() => setOpen(false)}
             >
               Register Now
