@@ -82,11 +82,11 @@ export default function Navbar() {
               Login
             </Link>
             <Link
-              to="/signup"
-              className="flex-1 text-center bg-primary text-primary-foreground rounded-lg px-5 py-3 font-bold hover:bg-gold-hover transition-all"
+              to="/register"
+              className="flex-1 text-center bg-primary text-primary-foreground rounded-lg px-5 py-3 font-bold hover:bg-gold-hover transition-all gold-shimmer"
               onClick={() => setOpen(false)}
             >
-              Sign Up
+              Register Now
             </Link>
           </div>
         </div>
