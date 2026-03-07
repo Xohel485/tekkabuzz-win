@@ -158,13 +158,20 @@ export default function Footer() {
         </div>
 
         {/* Gaming Alliance */}
-        <div className="border-t border-border pt-4 mb-6">
+        <div className="border-t border-border pt-4 mb-4">
           <h4 className="font-heading text-xs font-bold text-primary mb-3 tracking-wider uppercase text-center">Gaming Alliance</h4>
           <div className="flex justify-center items-center gap-6">
             <div className="flex flex-col items-center gap-1.5">
               <img src={TRUST_ICONS.CAZVIP} alt="CazVIP Partner" className="h-10 md:h-12 object-contain" />
               <span className="text-[10px] text-muted-foreground">CazVIP Partner</span>
             </div>
+          </div>
+        </div>
+
+        {/* Customer Service */}
+        <div className="border-t border-border pt-4 mb-6">
+          <h4 className="font-heading text-xs font-bold text-primary mb-3 tracking-wider uppercase text-center">Customer Service</h4>
+          <div className="flex justify-center items-center gap-6">
             <div className="flex flex-col items-center gap-1.5">
               <img src={TRUST_ICONS.SUPPORT_24H} alt="24/7 Support" className="h-10 md:h-12 object-contain" />
               <span className="text-[10px] text-muted-foreground">24/7 Support</span>
