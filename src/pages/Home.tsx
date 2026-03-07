@@ -7,9 +7,7 @@ import FeaturesSection from "@/components/home/FeaturesSection";
 import PromotionsSection from "@/components/home/PromotionsSection";
 import PaymentMethods from "@/components/home/PaymentMethods";
 import ProviderMarquee from "@/components/home/ProviderMarquee";
-import StatsCounter from "@/components/home/StatsCounter";
 import SeoContent from "@/components/home/SeoContent";
-import CommunitySection from "@/components/home/CommunitySection";
 import FaqSection from "@/components/home/FaqSection";
 
 const JSON_LD = [
@@ -57,9 +55,7 @@ export default function Home() {
       <PromotionsSection />
       <PaymentMethods />
       <ProviderMarquee />
-      <StatsCounter />
       <SeoContent />
-      <CommunitySection />
       <FaqSection />
     </Layout>
   );
