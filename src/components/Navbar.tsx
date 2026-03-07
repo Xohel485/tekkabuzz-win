@@ -18,8 +18,8 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="flex-shrink-0 p-0">
-          <img src={IMAGES.LOGO_HEADER} alt="TekkaBuzz.win Logo" className="h-[60px] object-contain" />
+        <Link to="/" className="flex-shrink-0 p-0 leading-none">
+          <img src={IMAGES.LOGO_HEADER} alt="TekkaBuzz.win Logo" className="h-[80px] w-auto object-contain block" />
         </Link>
 
         {/* Desktop nav */}
