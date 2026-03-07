@@ -42,7 +42,7 @@ export default function Footer() {
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               TekkaBuzz (tekkabuzz.win) is the ONLY official platform. Also known as Taka Buzz, Tekka Buzz, TkkaBuzz, TekkaBaz, TakkaBuzz by Bangladesh players.
             </p>
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-2">
               {[
                 { label: "Facebook", to: "/facebook" },
                 { label: "Telegram", to: "/telegram" },
@@ -107,13 +107,13 @@ export default function Footer() {
         </div>
 
         {/* Licences */}
-        <div className="border-t border-border pt-8 mb-8 flex flex-wrap justify-between items-center gap-4">
-          <div className="flex gap-4 items-center">
+        <div className="border-t border-border pt-8 mb-8 flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4">
+          <div className="flex gap-4 items-center justify-center">
             <img src={TRUST_ICONS.LICENSE_CURACAO} alt="Gaming Curacao" className="h-10 object-contain opacity-70" />
             <img src={TRUST_ICONS.LICENSE_3} alt="License" className="h-10 object-contain opacity-70" />
             <img src={TRUST_ICONS.CAZVIP} alt="CazVIP" className="h-10 object-contain opacity-70" />
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center justify-center">
             <img src={TRUST_ICONS.GAMCARE} alt="GamCare" className="h-8 object-contain opacity-70" />
             <img src={TRUST_ICONS.AGE_18} alt="18+" className="h-8 object-contain opacity-70" />
             <img src={TRUST_ICONS.RESP_GAMBLING} alt="Responsible Gambling" className="h-8 object-contain opacity-70" />
