@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
+import Ticker from "@/components/Ticker";
 import HeroSection from "@/components/home/HeroSection";
 import BannerSlider from "@/components/home/BannerSlider";
 import GameCategories from "@/components/home/GameCategories";
@@ -50,6 +51,7 @@ export default function Home() {
 
       <HeroSection />
       <BannerSlider />
+      <Ticker />
       <GameCategories />
       <FeaturesSection />
       <PromotionsSection />
