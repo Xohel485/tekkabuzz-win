@@ -46,7 +46,7 @@ export default function Home() {
         <meta property="og:title" content="Taka Buzz | Tekka Buzz | TekkaBuzz -- Bangladesh's #1 Online Casino" />
         <meta property="og:description" content="Bangladesh's most trusted gaming platform. 20,000 Taka bonus. Instant bKash Nagad withdrawal." />
         <meta property="og:url" content="https://www.tekkabuzz.win/" />
-        <meta property="og:image" content="https://i.ibb.co.com/VpJLpZpv/Tekka-Buzz-hero.png" />
+        <meta property="og:image" content="https://tekkabuzz-win.lovable.app/images/tekka-buzz-hero.png" />
         <script type="application/ld+json">{JSON.stringify(JSON_LD)}</script>
       </Helmet>
 
