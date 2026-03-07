@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-14 md:h-16">
         <Link to="/" className="flex-shrink-0">
-          <img src={IMAGES.LOGO_HEADER} alt="TekkaBuzz.win Logo" className="h-8 md:h-10 object-contain" />
+          <img src={IMAGES.LOGO_HEADER} alt="TekkaBuzz.win Logo" className="h-10 md:h-14 object-contain" />
         </Link>
 
         {/* Desktop nav */}
