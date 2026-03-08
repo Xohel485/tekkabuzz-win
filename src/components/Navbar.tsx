@@ -1,15 +1,26 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { X, Download } from "lucide-react";
 import { IMAGES } from "@/lib/images";
 import { useLocale } from "@/hooks/useLocale";
 import { UI } from "@/lib/translations";
+import { usePwaInstall } from "@/hooks/usePwaInstall";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const locale = useLocale();
   const t = UI[locale];
+  const navigate = useNavigate();
+  const { canInstall, isInstalled, install } = usePwaInstall();
+
+  const handleInstallClick = async () => {
+    if (canInstall) {
+      await install();
+    } else {
+      navigate("/app/open");
+    }
+  };
 
   const NAV_LINKS = [
     { label: t.liveCasino, to: "/casino" },
@@ -67,10 +78,16 @@ export default function Navbar() {
             <Link to="/signup" className="px-2 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-bold bg-primary text-primary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all whitespace-nowrap gold-shimmer" aria-label={t.signUp}>
               {t.signUp}
             </Link>
-            <Link to="/app/open" className="hidden sm:flex px-3 py-1.5 text-sm font-semibold bg-secondary text-secondary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all items-center gap-1.5" title="Install TekkaBuzz App">
-              <Download className="w-3.5 h-3.5" aria-hidden="true" />
-              {t.app}
-            </Link>
+            {!isInstalled && (
+              <button
+                onClick={handleInstallClick}
+                className="hidden sm:flex px-3 py-1.5 text-sm font-semibold bg-secondary text-secondary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all items-center gap-1.5"
+                title="Install TekkaBuzz App"
+              >
+                <Download className="w-3.5 h-3.5" aria-hidden="true" />
+                {t.app}
+              </button>
+            )}
           </div>
         </div>
       </div>
@@ -83,10 +100,15 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link to="/app/open" onClick={() => setOpen(false)} className="flex items-center justify-center gap-2 mt-3 px-4 py-3 border border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all">
-              <Download size={16} aria-hidden="true" />
-              {t.downloadApp}
-            </Link>
+            {!isInstalled && (
+              <button
+                onClick={() => { setOpen(false); handleInstallClick(); }}
+                className="flex items-center justify-center gap-2 mt-3 px-4 py-3 border border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all w-full"
+              >
+                <Download size={16} aria-hidden="true" />
+                {t.downloadApp}
+              </button>
+            )}
           </nav>
         </div>
       )}
