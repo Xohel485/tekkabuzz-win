@@ -167,10 +167,10 @@ export default function RedirectPage({
           </p>
 
           <div className="flex gap-2 mt-8 flex-wrap justify-center opacity-45">
-            {["https://i.ibb.co.com/fVhtjjg9/bKash.webp",
-              "https://i.ibb.co.com/qFMsC9SQ/Nagad.webp",
-              "https://i.ibb.co.com/4nzCbKjg/rocket.webp",
-              "https://i.ibb.co.com/dw52WPqG/upay.webp"].map((src, i) => (
+            {["/images/payments/bkash.webp",
+              "/images/payments/nagad.webp",
+              "/images/payments/rocket.webp",
+              "/images/payments/upay.webp"].map((src, i) => (
               <img key={i} src={src} alt="payment method" className="h-[18px] object-contain" loading="lazy" />
             ))}
           </div>
