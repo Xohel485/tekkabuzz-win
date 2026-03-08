@@ -250,7 +250,7 @@ export default function RedirectPage({
         <title>{seoTitle} | TekkaBuzz — Bangladesh Online Casino</title>
         <meta name="description" content={seoDesc} />
         <meta name="keywords" content={seoKeywords} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href={`https://www.tekkabuzz.win${canonicalPath}`} />
         {hreflangs.map((h, i) => (
           <link key={i} rel={h.rel} hrefLang={h.hreflang} href={h.href} />
