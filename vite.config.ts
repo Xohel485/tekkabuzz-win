@@ -45,7 +45,7 @@ export default defineConfig(({ mode }) => ({
         display: "standalone",
         orientation: "portrait",
         scope: "/",
-        start_url: "/",
+        start_url: "/login",
         icons: [
           { src: "/images/tekkabuzz-favicon.jpg", sizes: "64x64", type: "image/jpeg" },
           { src: "/images/tekkabuzz-logo-cropped.png", sizes: "192x192", type: "image/png" },
