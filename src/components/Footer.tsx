@@ -64,7 +64,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-16">
         {/* Logo & Description */}
         <div className="text-center mb-8">
-          <img src="https://i.ibb.co.com/p6Gz6XBw/tekabuzz-footer-logo.webp" alt="TekkaBuzz" className="mx-auto mb-4" style={{ height: "48px", width: "auto", objectFit: "contain", transform: "scale(1.3)", transformOrigin: "center center" }} />
+          <img src={IMAGES.LOGO_FOOTER} alt="TekkaBuzz.win Footer Logo" className="h-10 md:h-12 mx-auto mb-4 object-contain" />
           <p className="text-muted-foreground text-xs md:text-sm leading-relaxed max-w-md mx-auto">
             Bangladesh's premier online gaming platform. Experience the thrill of live casino, sports betting, and exclusive bonuses.
           </p>
