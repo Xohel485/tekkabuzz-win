@@ -1,15 +1,2 @@
-import GameInfoPage from "@/components/GameInfoPage";
-export default function DragonTiger() {
-  return (
-    <GameInfoPage
-      title="TekkaBuzz Dragon Tiger | ড্রাগন টাইগার বাংলাদেশ"
-      description="Play Dragon Tiger at TekkaBuzz. Fast-paced live card game. Bet on Dragon or Tiger and win instantly."
-      keywords="tekkabuzz dragon tiger, dragon tiger bangladesh, ড্রাগন টাইগার"
-      canonical="https://www.tekkabuzz.win/dragon-tiger"
-      heading="Play Dragon Tiger at TekkaBuzz"
-      ctaText="Play Dragon Tiger"
-      ctaLink="/go/casino"
-      content="<p>Dragon Tiger is the fastest card game at TekkaBuzz. Simply bet on Dragon or Tiger — the higher card wins.</p><p>Each round takes just seconds, making it perfect for quick, exciting gaming sessions.</p>"
-    />
-  );
-}
+import { useLocale } from "@/hooks/useLocale"; import { GAME_PAGES } from "@/lib/gameTranslations"; import GameInfoPage from "@/components/GameInfoPage";
+export default function DragonTiger() { const locale = useLocale(); const t = GAME_PAGES["dragon-tiger"][locale]; return <GameInfoPage title={t.title} description={t.description} keywords="tekkabuzz dragon tiger, ড্রাগন টাইগার" canonical="https://www.tekkabuzz.win/dragon-tiger" heading={t.heading} ctaText={t.ctaText} ctaLink="/go/casino" content={t.content} />; }
