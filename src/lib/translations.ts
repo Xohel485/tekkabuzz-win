@@ -17,6 +17,7 @@ export const UI: Record<Locale, {
   signUpNow: string;
   downloadApp: string;
   app: string;
+  openApp: string;
   promos: string;
   support: string;
   // Footer
@@ -59,6 +60,7 @@ export const UI: Record<Locale, {
     signUpNow: "Sign Up Now",
     downloadApp: "Download App",
     app: "App",
+    openApp: "Open",
     promos: "Promos",
     support: "Support",
     gamesFooter: "Games",
@@ -100,6 +102,7 @@ export const UI: Record<Locale, {
     signUpNow: "এখনই সাইন আপ করুন",
     downloadApp: "অ্যাপ ডাউনলোড",
     app: "অ্যাপ",
+    openApp: "ওপেন",
     promos: "প্রোমো",
     support: "সাপোর্ট",
     gamesFooter: "গেমস",
@@ -141,6 +144,7 @@ export const UI: Record<Locale, {
     signUpNow: "ابھی سائن اپ کریں",
     downloadApp: "ایپ ڈاؤن لوڈ",
     app: "ایپ",
+    openApp: "کھولیں",
     promos: "پروموز",
     support: "سپورٹ",
     gamesFooter: "گیمز",

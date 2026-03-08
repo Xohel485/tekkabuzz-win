@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { X, Download } from "lucide-react";
+import { X, Download, ExternalLink } from "lucide-react";
 import { IMAGES } from "@/lib/images";
 import { useLocale } from "@/hooks/useLocale";
 import { UI } from "@/lib/translations";
@@ -81,10 +81,14 @@ export default function Navbar() {
             <button
               onClick={handleInstallClick}
               className="flex px-1.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-semibold bg-secondary text-secondary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all items-center gap-1"
-              title="Install TekkaBuzz App"
+              title={isInstalled ? "Open TekkaBuzz App" : "Install TekkaBuzz App"}
             >
-              <Download className="w-3.5 h-3.5" aria-hidden="true" />
-              <span className="hidden sm:inline">{t.app}</span>
+              {isInstalled ? (
+                <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
+              ) : (
+                <Download className="w-3.5 h-3.5" aria-hidden="true" />
+              )}
+              <span className="hidden sm:inline">{isInstalled ? t.openApp : t.app}</span>
             </button>
           </div>
         </div>
@@ -102,8 +106,8 @@ export default function Navbar() {
               onClick={() => { setOpen(false); handleInstallClick(); }}
               className="flex items-center justify-center gap-2 mt-3 px-4 py-3 border border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all w-full"
             >
-              <Download size={16} aria-hidden="true" />
-              {t.downloadApp}
+              {isInstalled ? <ExternalLink size={16} aria-hidden="true" /> : <Download size={16} aria-hidden="true" />}
+              {isInstalled ? t.openApp : t.downloadApp}
             </button>
           </nav>
         </div>
