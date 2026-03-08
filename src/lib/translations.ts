@@ -60,6 +60,7 @@ export const UI: Record<Locale, {
     signUpNow: "Sign Up Now",
     downloadApp: "Download App",
     app: "App",
+    openApp: "Open",
     promos: "Promos",
     support: "Support",
     gamesFooter: "Games",
