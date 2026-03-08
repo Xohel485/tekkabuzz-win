@@ -51,20 +51,12 @@ export default function Navbar() {
               className="flex-shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg"
               aria-label="TekkaBuzz Home"
             >
-              <div style={{ height: "36px", overflow: "hidden", display: "flex", alignItems: "center" }}>
-                <img
-                  src={IMAGES.LOGO_HEADER}
-                  alt="TekkaBuzz.win Logo"
-                  style={{
-                    height: "162px",
-                    width: "auto",
-                    marginTop: "-63px",
-                    objectFit: "contain",
-                    flexShrink: 0,
-                  }}
-                  loading="eager"
-                />
-              </div>
+              <img
+                src={IMAGES.LOGO_HEADER}
+                alt="TekkaBuzz.win Logo"
+                className="h-8 lg:h-10 w-auto object-contain"
+                loading="eager"
+              />
             </Link>
           </div>
 
