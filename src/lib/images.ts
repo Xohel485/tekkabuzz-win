@@ -3,7 +3,7 @@ export const IMAGES = {
   LOGO_FOOTER: "/images/tekkabuzz-win-logo.png",
   HERO_MAIN: "/images/tekka-buzz-hero.png",
   HERO_FEATURED: "/images/hero-featured.png",
-  FAVICON: "/images/tekkabuzz-favicon.jpg",
+  FAVICON: "/images/tekkabuzz-favicon.webp",
 };
 
 export const BANNERS = [
