@@ -77,7 +77,7 @@ export default function HeroSection() {
           </Link>
         </div>
         <div className="flex justify-center">
-          <img src={IMAGES.HERO_MAIN} alt="TekkaBuzz.win Casino Bangladesh" className="w-full max-w-sm md:max-w-lg rounded-2xl" loading="eager" fetchPriority="high" width={512} height={512} decoding="async" />
+          <img src={IMAGES.HERO_MAIN} alt="TekkaBuzz.win Casino Bangladesh" className="w-full max-w-sm md:max-w-lg rounded-2xl" loading="eager" fetchPriority="high" width={512} height={329} decoding="async" style={{ aspectRatio: '512/329' }} />
         </div>
       </div>
 

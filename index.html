@@ -58,7 +58,7 @@
     <!-- Non-render-blocking Google Fonts — loaded async via JS -->
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap" /></noscript>
     <script>
-    !function(){var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap";document.head.appendChild(l)}();
+    !function(){var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap";l.media="print";l.onload=function(){l.media="all"};document.head.appendChild(l)}();
     </script>
 
     <!-- Critical inline CSS for instant shell -->
@@ -104,7 +104,7 @@
             <a href="/login" class="shell-btn shell-btn-s">Login to TekkaBuzz</a>
           </div>
           <!-- LCP hint: first banner prerendered for faster paint -->
-          <img src="/images/banners/banner-1.png" alt="TekkaBuzz Promotion" width="1200" height="400" style="width:100%;height:auto;border-radius:12px;margin-top:24px" fetchpriority="high" />
+          <img src="/images/banners/banner-1.png" alt="TekkaBuzz Promotion" width="1200" height="400" style="width:100%;aspect-ratio:3/1;object-fit:cover;border-radius:12px;margin-top:24px" fetchpriority="high" />
         </main>
         <section class="shell-games">
           <a href="/casino" class="shell-game"><h3>Live Casino</h3><p>Baccarat, Roulette, Teen Patti</p></a>
