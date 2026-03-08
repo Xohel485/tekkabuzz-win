@@ -72,7 +72,7 @@ export default function GameCategories() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
           {t.cats.map((cat, i) => (
             <Link key={LINKS[i]} to={LINKS[i]} className="bg-card border border-border rounded-xl p-4 md:p-6 text-center hover:border-primary transition-all duration-300 group">
-              <img src={ICONS[i]} alt={cat.title} className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 object-contain" loading="lazy" />
+              <img src={ICONS[i]} alt={cat.title} className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 object-contain" loading="lazy" width="64" height="64" decoding="async" />
               <h3 className="font-heading text-xs md:text-base font-bold text-foreground mb-1 md:mb-2">{cat.title}</h3>
               <p className="text-xs text-muted-foreground mb-4 hidden md:block">{cat.desc}</p>
               <span className="inline-block bg-primary text-primary-foreground font-bold rounded-lg px-4 py-2 text-xs group-hover:bg-gold-hover transition-all">
