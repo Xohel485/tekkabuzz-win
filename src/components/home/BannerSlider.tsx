@@ -30,9 +30,11 @@ export default function BannerSlider() {
               src={banners[current]}
               alt={`TekkaBuzz Promotion ${current + 1}`}
               className="w-full h-auto object-cover rounded-xl transition-opacity duration-500"
-              loading="lazy"
+              loading={current === 0 ? "eager" : "lazy"}
+              fetchPriority={current === 0 ? "high" : undefined}
               width={1200}
               height={400}
+              decoding={current === 0 ? "sync" : "async"}
             />
           </Link>
         </div>
