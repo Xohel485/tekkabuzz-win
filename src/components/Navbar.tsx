@@ -81,11 +81,11 @@ export default function Navbar() {
             {!isInstalled && (
               <button
                 onClick={handleInstallClick}
-                className="hidden sm:flex px-3 py-1.5 text-sm font-semibold bg-secondary text-secondary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all items-center gap-1.5"
+                className="flex px-1.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-semibold bg-secondary text-secondary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all items-center gap-1"
                 title="Install TekkaBuzz App"
               >
                 <Download className="w-3.5 h-3.5" aria-hidden="true" />
-                {t.app}
+                <span className="hidden sm:inline">{t.app}</span>
               </button>
             )}
           </div>
