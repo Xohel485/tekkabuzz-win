@@ -124,6 +124,11 @@
     </div>
     <script type="module" src="/src/main.tsx"></script>
 
+    <!-- Deferred SW registration — non-render-blocking -->
+    <script>
+    if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js',{scope:'/'})});}
+    </script>
+
     <!-- Fallback for JavaScript disabled -->
     <noscript>
       <style>
