@@ -1,14 +1,14 @@
 export const IMAGES = {
-  LOGO_HEADER: "/images/tekkabuzz-win-logo.webp",
-  LOGO_FOOTER: "/images/tekkabuzz-win-logo.webp",
-  HERO_MAIN: "/images/tekka-buzz-hero.webp",
+  LOGO_HEADER: "/images/tekkabuzz-win-logo.png",
+  LOGO_FOOTER: "/images/tekkabuzz-win-logo.png",
+  HERO_MAIN: "/images/tekka-buzz-hero.png",
   HERO_FEATURED: "/images/hero-featured.png",
   FAVICON: "/images/tekkabuzz-favicon.jpg",
 };
 
 export const BANNERS = [
-  "/images/banners/banner-1.webp",
-  "/images/banners/banner-2.webp",
+  "/images/banners/banner-1.png",
+  "/images/banners/banner-2.png",
   "/images/banners/banner-3.png",
   "/images/banners/banner-4.png",
   "/images/banners/banner-5.png",
@@ -19,13 +19,13 @@ export const BANNERS = [
 ];
 
 export const GAME_ICONS = {
-  CASINO: "/images/games/casino.webp",
-  SPORT: "/images/games/sport.webp",
-  SLOT: "/images/games/slot.webp",
-  CRASH: "/images/games/crash.webp",
-  FISHING: "/images/games/fishing.webp",
-  LOTTERY: "/images/games/lottery.webp",
-  ARCADE: "/images/games/arcade.webp",
+  CASINO: "/images/games/casino.png",
+  SPORT: "/images/games/sport.png",
+  SLOT: "/images/games/slot.png",
+  CRASH: "/images/games/crash.png",
+  FISHING: "/images/games/fishing.png",
+  LOTTERY: "/images/games/lottery.png",
+  ARCADE: "/images/games/arcade.png",
   TABLE: "/images/games/table.png",
 };
 
@@ -44,12 +44,12 @@ export const PAYMENT_ICONS = [
 
 export const TRUST_ICONS = {
   LICENSE_CURACAO: "/images/trust/gaming-curacao.webp",
-  LICENSE_3: "/images/trust/license3.webp",
+  LICENSE_3: "/images/trust/license3.png",
   GAMCARE: "/images/trust/gamcare.webp",
   AGE_18: "/images/trust/age-18.webp",
   RESP_GAMBLING: "/images/trust/responsible-gambling.webp",
-  CAZVIP: "/images/trust/cazvip.webp",
-  SUPPORT_24H: "/images/trust/24h-support.webp",
+  CAZVIP: "/images/trust/cazvip.png",
+  SUPPORT_24H: "/images/trust/24h-support.png",
 };
 
 export const PROVIDER_LOGOS = Array.from({ length: 48 }, (_, i) => `/images/providers/p-${String(i + 1).padStart(2, "0")}.png`);
