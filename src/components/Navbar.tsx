@@ -79,10 +79,16 @@ export default function Navbar() {
             <Link to="/signup" className="px-2 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-bold bg-primary text-primary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all whitespace-nowrap gold-shimmer" aria-label={t.signUp}>
               {t.signUp}
             </Link>
-            <Link to="/app/open" className="hidden sm:flex px-3 py-1.5 text-sm font-semibold bg-secondary text-secondary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all items-center gap-1.5" title="Install TekkaBuzz App">
-              <Download className="w-3.5 h-3.5" aria-hidden="true" />
-              {t.app}
-            </Link>
+            {!isInstalled && (
+              <button
+                onClick={handleInstallClick}
+                className="hidden sm:flex px-3 py-1.5 text-sm font-semibold bg-secondary text-secondary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all items-center gap-1.5"
+                title="Install TekkaBuzz App"
+              >
+                <Download className="w-3.5 h-3.5" aria-hidden="true" />
+                {t.app}
+              </button>
+            )}
           </div>
         </div>
       </div>
