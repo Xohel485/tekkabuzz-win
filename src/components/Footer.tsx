@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { IMAGES, TRUST_ICONS, PAYMENT_ICONS } from "@/lib/images";
 
+const LOGO_CROPPED = "/images/tekkabuzz-logo-cropped.png";
+
 const GAME_LINKS = [
   { label: "Live Casino", to: "/casino" },
   { label: "Sports Betting", to: "/sports" },
