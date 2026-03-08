@@ -101,10 +101,15 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link to="/app/open" onClick={() => setOpen(false)} className="flex items-center justify-center gap-2 mt-3 px-4 py-3 border border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all">
-              <Download size={16} aria-hidden="true" />
-              {t.downloadApp}
-            </Link>
+            {!isInstalled && (
+              <button
+                onClick={() => { setOpen(false); handleInstallClick(); }}
+                className="flex items-center justify-center gap-2 mt-3 px-4 py-3 border border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all w-full"
+              >
+                <Download size={16} aria-hidden="true" />
+                {t.downloadApp}
+              </button>
+            )}
           </nav>
         </div>
       )}
