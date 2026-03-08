@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { X, Download } from "lucide-react";
+import { X, Download, ExternalLink } from "lucide-react";
 import { IMAGES } from "@/lib/images";
 import { useLocale } from "@/hooks/useLocale";
 import { UI } from "@/lib/translations";
