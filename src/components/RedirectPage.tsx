@@ -210,6 +210,7 @@ export default function RedirectPage({
   const [langIdx, setLangIdx] = useState(0);
   const displayName = seoTitle.replace("TekkaBuzz ", "");
   const content = PAGE_CONTENT[canonicalPath];
+  const hreflangs = hreflangTags(canonicalPath);
 
   const faqSchema = content?.faqs?.length ? {
     "@context": "https://schema.org",
