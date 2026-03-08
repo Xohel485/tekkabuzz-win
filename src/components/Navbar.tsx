@@ -54,7 +54,7 @@ export default function Navbar() {
               <img
                 src={IMAGES.LOGO_HEADER}
                 alt="TekkaBuzz.win Logo"
-                className="h-8 lg:h-10 w-auto object-contain"
+                className="h-6 sm:h-8 lg:h-10 w-auto object-contain"
                 loading="eager"
               />
             </Link>
