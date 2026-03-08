@@ -12,16 +12,16 @@ export default function HeroSection() {
           <p className="text-muted-foreground text-sm md:text-lg leading-relaxed mb-5 md:mb-8">
             The platform known as Taka Buzz, TkkaBuzz, TekkaBaz, TakkaBuzz — one official site tekkabuzz.win. Join 29M+ players with 20,000 Taka welcome bonus and instant bKash Nagad withdrawals.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-4">
+          <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-4">
             <Link
               to="/signup"
-              className="bg-primary text-primary-foreground font-bold rounded-lg px-6 py-3 md:px-8 md:py-4 text-sm md:text-lg text-center hover:bg-gold-hover transition-all gold-shimmer"
+              className="bg-primary text-primary-foreground font-bold rounded-lg px-6 py-3 text-base text-center hover:bg-gold-hover transition-all gold-shimmer whitespace-nowrap w-fit"
             >
-              Sign Up — Get 20,000 Taka Bonus
+              Sign Up — Get 20,000 Taka
             </Link>
             <Link
               to="/login"
-              className="border-2 border-primary text-primary font-bold rounded-lg px-6 py-3 md:px-8 md:py-4 text-sm md:text-lg text-center hover:bg-primary hover:text-primary-foreground transition-all"
+              className="border-2 border-primary text-primary font-bold rounded-lg px-6 py-3 text-base text-center hover:bg-primary hover:text-primary-foreground transition-all whitespace-nowrap w-fit"
             >
               Login to TekkaBuzz
             </Link>
