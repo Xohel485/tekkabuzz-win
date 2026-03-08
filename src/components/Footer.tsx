@@ -170,11 +170,18 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Trust badges */}
-      <div className="border-t border-border py-5">
-        <div className="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-5">
-          {TRUST_BADGES.map((b) => (
-            <img key={b.alt} src={b.src} alt={b.alt} className="h-8 md:h-10 object-contain" loading="lazy" />
+      {/* Trust badges - sectioned */}
+      <div className="border-t border-border py-6">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
+          {TRUST_SECTIONS.map((section) => (
+            <div key={section.title} className="flex flex-col items-center text-center gap-3">
+              <p className="text-muted-foreground/50 text-[10px] uppercase tracking-widest font-medium">{section.title}</p>
+              <div className="flex flex-wrap gap-3 justify-center items-center">
+                {section.badges.map((b) => (
+                  <img key={b.alt} src={b.src} alt={b.alt} className="h-8 md:h-10 object-contain" loading="lazy" />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
