@@ -144,6 +144,7 @@ export const UI: Record<Locale, {
     signUpNow: "ابھی سائن اپ کریں",
     downloadApp: "ایپ ڈاؤن لوڈ",
     app: "ایپ",
+    openApp: "کھولیں",
     promos: "پروموز",
     support: "سپورٹ",
     gamesFooter: "گیمز",
