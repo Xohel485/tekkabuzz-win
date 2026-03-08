@@ -1,12 +1,14 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { Globe } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { getLocaleFromPath, type Locale } from "@/hooks/useLocale";
+import usFlag from "@/assets/flags/us.png";
+import bdFlag from "@/assets/flags/bd.png";
+import pkFlag from "@/assets/flags/pk.png";
 
 const LANGUAGES: { code: Locale; label: string; flag: string }[] = [
-  { code: "en", label: "English", flag: "🇺🇸" },
-  { code: "bn", label: "বাংলা", flag: "🇧🇩" },
-  { code: "ur", label: "اردو", flag: "🇵🇰" },
+  { code: "en", label: "English", flag: usFlag },
+  { code: "bn", label: "বাংলা", flag: bdFlag },
+  { code: "ur", label: "اردو", flag: pkFlag },
 ];
 
 const PREFIX_MAP: Record<Locale, string> = {
@@ -49,23 +51,30 @@ export default function LanguageSwitcher() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1 px-2 py-1.5 text-xs font-medium text-muted-foreground hover:text-primary rounded-lg transition-colors"
+        className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full overflow-hidden border-2 border-border hover:border-primary transition-colors active:scale-95"
         aria-label="Switch language"
       >
-        <Globe className="w-3.5 h-3.5" />
-        <span className="hidden sm:inline">{currentLang.flag}</span>
+        <img
+          src={currentLang.flag}
+          alt={currentLang.label}
+          className="w-full h-full object-cover"
+        />
       </button>
       {open && (
-        <div className="absolute right-0 top-full mt-1 bg-card border border-border rounded-lg shadow-lg overflow-hidden z-50 min-w-[140px]">
+        <div className="absolute right-0 top-full mt-1.5 bg-card border border-border rounded-lg shadow-lg overflow-hidden z-50 min-w-[150px]">
           {LANGUAGES.map((lang) => (
             <button
               key={lang.code}
               onClick={() => switchTo(lang.code)}
-              className={`flex items-center gap-2 w-full px-3 py-2 text-sm hover:bg-accent transition-colors ${
-                current === lang.code ? "text-primary font-semibold" : "text-foreground"
+              className={`flex items-center gap-2.5 w-full px-3 py-2.5 text-sm hover:bg-accent transition-colors ${
+                current === lang.code ? "text-primary font-semibold bg-accent/50" : "text-foreground"
               }`}
             >
-              <span>{lang.flag}</span>
+              <img
+                src={lang.flag}
+                alt={lang.label}
+                className="w-5 h-5 rounded-full object-cover"
+              />
               <span>{lang.label}</span>
             </button>
           ))}
