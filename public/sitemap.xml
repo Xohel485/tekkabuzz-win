@@ -237,4 +237,41 @@
   <url><loc>https://www.tekkabuzz.win/blog/tekka-buzz-bet</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.tekkabuzz.win/blog/tekkabuzz-casino</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.tekkabuzz.win/blog/taka-alliance-gaming</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/blog/tekabuzz</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/blog/teka-buzz</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/blog/teekabuzz</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/blog/takka-buzz</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/blog/takkabuz</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/blog/takkbuzz</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/blog/tekk-buzz</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Install / PWA -->
+  <url><loc>https://www.tekkabuzz.win/install</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/install</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/install</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <!-- Additional redirect pages -->
+  <url><loc>https://www.tekkabuzz.win/register</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/app/open</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/get-refercode</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/withdrawal</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/payment</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/payment-methods</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/upay</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Additional game pages -->
+  <url><loc>https://www.tekkabuzz.win/sic-bo</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/keno</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/dice</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/limbo</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/hilo</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/crash-games</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/fishing-games</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/lottery-games</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/arcade-games</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/card-games</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/live-dealer</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.tekkabuzz.win/mobile</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/vip-program</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/daily-bonus</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 </urlset>
