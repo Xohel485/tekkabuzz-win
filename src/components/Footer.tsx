@@ -92,9 +92,9 @@ export default function Footer() {
                   key={s.href}
                   href={s.href}
                   aria-label={s.ariaLabel}
-                  className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-muted-foreground text-xs font-bold hover:bg-primary hover:text-primary-foreground transition-colors"
+                  className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                 >
-                  {s.label}
+                  <s.icon className="w-4 h-4" />
                 </a>
               ))}
             </div>

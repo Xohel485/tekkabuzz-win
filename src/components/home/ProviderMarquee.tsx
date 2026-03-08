@@ -24,7 +24,7 @@ export default function ProviderMarquee() {
         <div className="overflow-hidden">
           <div className="marquee-reverse flex gap-6 md:gap-8 items-center">
             {[...row2, ...row2].map((logo, i) => (
-              <img key={i} src={logo} alt="Game provider" className="h-8 md:h-10 w-auto object-contain flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity" loading="lazy" />
+              <img key={i} src={logo} alt="Game provider" className="h-8 md:h-10 w-auto object-contain flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity" loading="lazy" decoding="async" width={80} height={40} />
             ))}
           </div>
         </div>

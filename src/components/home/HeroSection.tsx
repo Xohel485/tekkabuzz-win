@@ -40,6 +40,10 @@ export default function HeroSection() {
             alt="TekkaBuzz.win Casino Bangladesh — Taka Buzz Tekka Buzz"
             className="w-full max-w-sm md:max-w-lg rounded-2xl"
             loading="eager"
+            fetchPriority="high"
+            width={512}
+            height={512}
+            decoding="async"
           />
         </div>
       </div>
