@@ -59,4 +59,18 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom"],
+          router: ["react-router-dom"],
+          firebase: ["firebase/app", "firebase/database"],
+        },
+      },
+    },
+    target: "es2020",
+    cssCodeSplit: true,
+    minify: "esbuild",
+  },
 }));
