@@ -29,6 +29,8 @@ const Terms = lazy(() => import("@/pages/Terms"));
 const Privacy = lazy(() => import("@/pages/Privacy"));
 const ResponsibleGaming = lazy(() => import("@/pages/ResponsibleGaming"));
 const Blog = lazy(() => import("@/pages/Blog"));
+const LocalizedBlog = lazy(() => import("@/pages/LocalizedBlog"));
+const LocalizedPost = lazy(() => import("@/pages/LocalizedPost"));
 const Promotion = lazy(() => import("@/pages/Promotion"));
 const Campaign = lazy(() => import("@/pages/Campaign"));
 const WelcomeBonus = lazy(() => import("@/pages/bonuses/Welcome"));
