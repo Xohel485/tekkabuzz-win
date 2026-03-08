@@ -33,6 +33,9 @@ const CashbackBonus = lazy(() => import("@/pages/bonuses/Cashback"));
 const ReferralBonus = lazy(() => import("@/pages/bonuses/Referral"));
 const TaskBonus = lazy(() => import("@/pages/bonuses/Task"));
 const BlogRouter = lazy(() => import("@/pages/blog/BlogRouter"));
+const AppDownload = lazy(() => import("@/pages/AppDownload"));
+const AdminBlog = lazy(() => import("@/pages/AdminBlog"));
+const DynamicBlogPost = lazy(() => import("@/pages/DynamicBlogPost"));
 
 // Game info pages
 const LiveCasino = lazy(() => import("@/pages/games/LiveCasino"));
