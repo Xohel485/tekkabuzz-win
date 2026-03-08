@@ -95,7 +95,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col items-center text-center">
             <Link to="/" aria-label="TekkaBuzz Home">
-              <img src={LOGO_CROPPED} alt="TekkaBuzz.win" className="h-8 w-auto object-contain" loading="lazy" />
+              <img src={LOGO_CROPPED} alt="TekkaBuzz.win" className="h-8 w-auto object-contain" loading="lazy" width="280" height="32" />
             </Link>
             <p className="text-muted-foreground text-xs leading-relaxed mt-3 mb-4">{t.footerDescription}</p>
             <div className="flex gap-2 justify-center">
