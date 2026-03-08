@@ -1,35 +1,10 @@
 import { Link } from "react-router-dom";
 import { Facebook } from "lucide-react";
 import { IMAGES, TRUST_ICONS, PAYMENT_ICONS } from "@/lib/images";
+import { useLocale } from "@/hooks/useLocale";
+import { UI } from "@/lib/translations";
 
 const LOGO_CROPPED = "/images/tekkabuzz-logo-cropped.png";
-
-const GAME_LINKS = [
-  { label: "Live Casino", to: "/casino" },
-  { label: "Sports Betting", to: "/sports" },
-  { label: "Slots", to: "/slots" },
-  { label: "Crash Games", to: "/crash" },
-  { label: "Fishing", to: "/fishing" },
-  { label: "Lottery", to: "/lottery" },
-  { label: "Arcade", to: "/arcade" },
-  { label: "Table Games", to: "/table" },
-];
-
-const INFO_LINKS = [
-  { label: "About", to: "/about" },
-  { label: "Affiliate", to: "/affiliate" },
-  { label: "Blog", to: "/blog" },
-  { label: "Promotions", to: "/promotion" },
-  { label: "FAQ", to: "/faq" },
-  { label: "Contact", to: "/contact" },
-  { label: "VIP Program", to: "/vip" },
-];
-
-const LEGAL_LINKS = [
-  { label: "Terms of Service", to: "/terms" },
-  { label: "Privacy Policy", to: "/privacy" },
-  { label: "Responsible Gaming", to: "/responsible-gaming" },
-];
 
 const TelegramIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -56,16 +31,16 @@ const SOCIAL_LINKS = [
   { icon: XIcon, href: "/twitter", ariaLabel: "Twitter" },
 ];
 
-const TRUST_SECTIONS = [
+const TRUST_SECTIONS_DATA = [
   {
-    title: "Gaming Licence",
+    titleKey: "gamingLicence" as const,
     badges: [
       { src: TRUST_ICONS.LICENSE_CURACAO, alt: "Gaming Curacao License" },
       { src: TRUST_ICONS.LICENSE_3, alt: "Licensed & Certified" },
     ],
   },
   {
-    title: "Responsible Gaming",
+    titleKey: "responsibleGamingBadge" as const,
     badges: [
       { src: TRUST_ICONS.GAMCARE, alt: "GamCare Certified" },
       { src: TRUST_ICONS.AGE_18, alt: "18+ Only" },
@@ -73,85 +48,91 @@ const TRUST_SECTIONS = [
     ],
   },
   {
-    title: "Gaming Alliance",
-    badges: [
-      { src: TRUST_ICONS.CAZVIP, alt: "CazVIP Partner" },
-    ],
+    titleKey: "gamingAlliance" as const,
+    badges: [{ src: TRUST_ICONS.CAZVIP, alt: "CazVIP Partner" }],
   },
   {
-    title: "Customer Service",
-    badges: [
-      { src: TRUST_ICONS.SUPPORT_24H, alt: "24/7 Support" },
-    ],
+    titleKey: "customerService" as const,
+    badges: [{ src: TRUST_ICONS.SUPPORT_24H, alt: "24/7 Support" }],
   },
 ];
 
 export default function Footer() {
+  const locale = useLocale();
+  const t = UI[locale];
+
+  const GAME_LINKS = [
+    { label: t.liveCasino, to: "/casino" },
+    { label: t.sportsBetting, to: "/sports" },
+    { label: t.slots, to: "/slots" },
+    { label: t.crashGames, to: "/crash" },
+    { label: t.fishing, to: "/fishing" },
+    { label: t.lottery, to: "/lottery" },
+    { label: t.arcade, to: "/arcade" },
+    { label: t.tableGames, to: "/table" },
+  ];
+
+  const INFO_LINKS = [
+    { label: t.about, to: "/about" },
+    { label: t.affiliate, to: "/affiliate" },
+    { label: t.blog, to: "/blog" },
+    { label: t.promotions, to: "/promotion" },
+    { label: t.faq, to: "/faq" },
+    { label: t.contact, to: "/contact" },
+    { label: t.vipProgram, to: "/vip" },
+  ];
+
+  const LEGAL_LINKS = [
+    { label: t.termsOfService, to: "/terms" },
+    { label: t.privacyPolicy, to: "/privacy" },
+    { label: t.responsibleGaming, to: "/responsible-gaming" },
+  ];
+
   return (
     <footer className="border-t border-border" style={{ backgroundColor: "#0d1117" }}>
-      {/* 4-column grid */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-          {/* Col 1: Brand */}
+          {/* Brand */}
           <div className="flex flex-col items-center text-center">
             <Link to="/" aria-label="TekkaBuzz Home">
-              <img
-                src={LOGO_CROPPED}
-                alt="TekkaBuzz.win"
-                className="h-8 w-auto object-contain"
-                loading="lazy"
-              />
+              <img src={LOGO_CROPPED} alt="TekkaBuzz.win" className="h-8 w-auto object-contain" loading="lazy" />
             </Link>
-            <p className="text-muted-foreground text-xs leading-relaxed mt-3 mb-4">
-              TekkaBuzz (tekkabuzz.win) — Official platform. Also known as Taka Buzz, Tekka Buzz, TkkaBuzz.
-            </p>
+            <p className="text-muted-foreground text-xs leading-relaxed mt-3 mb-4">{t.footerDescription}</p>
             <div className="flex gap-2 justify-center">
               {SOCIAL_LINKS.map((s) => (
-                <a
-                  key={s.href}
-                  href={s.href}
-                  aria-label={s.ariaLabel}
-                  className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
+                <a key={s.href} href={s.href} aria-label={s.ariaLabel} className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
                   <s.icon className="w-4 h-4" />
                 </a>
               ))}
             </div>
           </div>
 
-          {/* Col 2: Games */}
+          {/* Games */}
           <div className="flex flex-col items-center text-center">
-            <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4 font-heading">Games</h4>
+            <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4 font-heading">{t.gamesFooter}</h4>
             <ul className="space-y-2">
               {GAME_LINKS.map((l) => (
-                <li key={l.to}>
-                  <Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">{l.label}</Link>
-                </li>
+                <li key={l.to}><Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">{l.label}</Link></li>
               ))}
             </ul>
           </div>
 
-          {/* Col 3: Info */}
+          {/* Info */}
           <div className="flex flex-col items-center text-center">
-            <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4 font-heading">Info</h4>
+            <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4 font-heading">{t.info}</h4>
             <ul className="space-y-2">
               {INFO_LINKS.map((l) => (
-                <li key={l.to}>
-                  <Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">{l.label}</Link>
-                </li>
+                <li key={l.to}><Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">{l.label}</Link></li>
               ))}
             </ul>
           </div>
 
-          {/* Col 4: Legal */}
+          {/* Legal */}
           <div className="flex flex-col items-center text-center">
-            <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4 font-heading">Legal</h4>
+            <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4 font-heading">{t.legal}</h4>
             <ul className="space-y-2">
               {LEGAL_LINKS.map((l) => (
-                <li key={l.to}>
-                  <Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">{l.label}</Link>
-                </li>
+                <li key={l.to}><Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">{l.label}</Link></li>
               ))}
             </ul>
           </div>
@@ -161,28 +142,20 @@ export default function Footer() {
       {/* Payment icons */}
       <div className="border-t border-border py-6">
         <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
-          <p className="text-muted-foreground/50 text-xs uppercase tracking-widest">Payment Methods</p>
+          <p className="text-muted-foreground/50 text-xs uppercase tracking-widest">{t.paymentMethods}</p>
           <div className="flex flex-wrap gap-4 justify-center items-center">
             {PAYMENT_ICONS.map((p) => (
               <img key={p.name} src={p.url} alt={`${p.name} payment`} className="h-8 md:h-10 w-auto object-contain bg-white/10 rounded-md px-1.5 py-1" loading="lazy" />
             ))}
-            {/* Bank Card - inline SVG */}
             <div className="h-8 md:h-10 bg-white/10 rounded-md px-2.5 py-1 flex items-center gap-1.5">
               <svg viewBox="0 0 24 24" fill="none" className="h-5 md:h-6 w-auto" aria-label="Bank Card payment">
-                <rect x="1" y="4" width="22" height="16" rx="3" fill="#1565C0"/>
-                <rect x="1" y="8" width="22" height="3" fill="#0D47A1"/>
-                <rect x="3" y="14" width="6" height="2" rx="1" fill="#E3F2FD"/>
-                <rect x="3" y="17" width="4" height="1" rx="0.5" fill="#90CAF9"/>
-                <circle cx="18" cy="15.5" r="2.5" fill="#FF9800"/>
-                <circle cx="20.5" cy="15.5" r="2.5" fill="#F44336" opacity="0.8"/>
+                <rect x="1" y="4" width="22" height="16" rx="3" fill="#1565C0"/><rect x="1" y="8" width="22" height="3" fill="#0D47A1"/><rect x="3" y="14" width="6" height="2" rx="1" fill="#E3F2FD"/><rect x="3" y="17" width="4" height="1" rx="0.5" fill="#90CAF9"/><circle cx="18" cy="15.5" r="2.5" fill="#FF9800"/><circle cx="20.5" cy="15.5" r="2.5" fill="#F44336" opacity="0.8"/>
               </svg>
               <span className="text-[10px] text-muted-foreground font-medium hidden sm:inline">Bank Card</span>
             </div>
-            {/* Crypto - inline SVG */}
             <div className="h-8 md:h-10 bg-white/10 rounded-md px-2.5 py-1 flex items-center gap-1.5">
               <svg viewBox="0 0 24 24" fill="none" className="h-5 md:h-6 w-auto" aria-label="Crypto payment">
-                <circle cx="12" cy="12" r="11" fill="#F7931A"/>
-                <path d="M16.662 10.661c.227-1.513-0.926-2.326-2.5-2.868l.511-2.05-1.248-.311-.498 1.996c-.328-.082-.665-.159-1-.236l.501-2.009-1.247-.311-.511 2.05c-.271-.062-.538-.123-.796-.187l.001-.007-1.721-.43-.332 1.333s.926.212.906.225c.505.126.596.461.581.727l-.582 2.332c.035.009.08.022.13.042l-.132-.033-.815 3.268c-.062.153-.218.383-.572.296.013.018-.907-.226-.907-.226l-.619 1.429 1.624.405c.302.076.598.155.889.229l-.516 2.074 1.246.311.512-2.052c.34.092.671.177.994.257l-.51 2.044 1.248.311.516-2.07c2.125.402 3.723.24 4.395-1.683.541-1.547-.027-2.44-1.145-3.022.814-.188 1.427-.724 1.59-1.831zm-2.846 3.989c-.385 1.546-2.987.71-3.831.5l.683-2.741c.844.211 3.548.628 3.148 2.241zm.384-4.012c-.35 1.406-2.517.691-3.219.516l.62-2.485c.702.175 2.963.502 2.599 1.969z" fill="white"/>
+                <circle cx="12" cy="12" r="11" fill="#F7931A"/><path d="M16.662 10.661c.227-1.513-0.926-2.326-2.5-2.868l.511-2.05-1.248-.311-.498 1.996c-.328-.082-.665-.159-1-.236l.501-2.009-1.247-.311-.511 2.05c-.271-.062-.538-.123-.796-.187l.001-.007-1.721-.43-.332 1.333s.926.212.906.225c.505.126.596.461.581.727l-.582 2.332c.035.009.08.022.13.042l-.132-.033-.815 3.268c-.062.153-.218.383-.572.296.013.018-.907-.226-.907-.226l-.619 1.429 1.624.405c.302.076.598.155.889.229l-.516 2.074 1.246.311.512-2.052c.34.092.671.177.994.257l-.51 2.044 1.248.311.516-2.07c2.125.402 3.723.24 4.395-1.683.541-1.547-.027-2.44-1.145-3.022.814-.188 1.427-.724 1.59-1.831zm-2.846 3.989c-.385 1.546-2.987.71-3.831.5l.683-2.741c.844.211 3.548.628 3.148 2.241zm.384-4.012c-.35 1.406-2.517.691-3.219.516l.62-2.485c.702.175 2.963.502 2.599 1.969z" fill="white"/>
               </svg>
               <span className="text-[10px] text-muted-foreground font-medium hidden sm:inline">Crypto</span>
             </div>
@@ -190,12 +163,12 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Trust badges - sectioned */}
+      {/* Trust badges */}
       <div className="border-t border-border py-6">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {TRUST_SECTIONS.map((section) => (
-            <div key={section.title} className="flex flex-col items-center text-center gap-3">
-              <p className="text-muted-foreground/50 text-[10px] uppercase tracking-widest font-medium">{section.title}</p>
+          {TRUST_SECTIONS_DATA.map((section) => (
+            <div key={section.titleKey} className="flex flex-col items-center text-center gap-3">
+              <p className="text-muted-foreground/50 text-[10px] uppercase tracking-widest font-medium">{t[section.titleKey]}</p>
               <div className="flex flex-wrap gap-3 justify-center items-center">
                 {section.badges.map((b) => (
                   <img key={b.alt} src={b.src} alt={b.alt} className="h-8 md:h-10 object-contain" loading="lazy" />
@@ -208,9 +181,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="border-t border-border py-4">
-        <p className="text-center text-muted-foreground/40 text-xs px-4 leading-relaxed">
-          &copy; 2026 TekkaBuzz Official (Taka Buzz | Tekka Buzz | TkkaBuzz). All Rights Reserved. 18+ Only. Gamble Responsibly. tekkabuzz.win is the ONLY official website.
-        </p>
+        <p className="text-center text-muted-foreground/40 text-xs px-4 leading-relaxed">{t.copyright}</p>
       </div>
     </footer>
   );
