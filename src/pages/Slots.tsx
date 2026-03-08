@@ -1,4 +1,9 @@
+import { useLocale } from "@/hooks/useLocale";
+import { GAME_PAGES } from "@/lib/gameTranslations";
 import GameInfoPage from "@/components/GameInfoPage";
+
 export default function Slots() {
-  return <GameInfoPage title="TekkaBuzz Slots | Taka Buzz Slots -- JILI PG Soft Pragmatic Bangladesh" description="1000+ slots at TekkaBuzz. JILI, PG Soft, Pragmatic Play, Habanero, CQ9. High RTP, free spins, jackpots. Taka buzz slots bKash deposit." keywords="tekkabuzz slots, taka buzz slots, tekka buzz slots, JILI slots bd, PG Soft bangladesh, online slots bd" canonical="https://www.tekkabuzz.win/slots" heading="TekkaBuzz Slots -- 1000+ Slot Games" ctaText="Play Slots Now" ctaLink="/go/slots" content="<p>Explore over 1,000 slot games at TekkaBuzz featuring top providers like JILI, PG Soft, Pragmatic Play, Habanero, CQ9, NetEnt, and more. From classic fruit slots to modern video slots with stunning graphics and massive jackpots, TekkaBuzz has something for every slot enthusiast in Bangladesh.</p><p>Popular titles include Fortune Tiger, Lucky Neko, Starlight Princess, Gates of Olympus, Sweet Bonanza, and Money Coming. With RTP rates ranging from 95% to 98%, our slots offer some of the best return rates in the industry. Free spins, bonus rounds, and progressive jackpots add to the excitement.</p><p>Start spinning with as little as 10 Taka per spin. Deposit via bKash, Nagad, or Rocket and enjoy instant access to all slot games. TekkaBuzz -- your ultimate <strong>taka buzz slots</strong> destination.</p>" />;
+  const locale = useLocale();
+  const t = GAME_PAGES.slots[locale];
+  return <GameInfoPage title={t.title} description={t.description} keywords="tekkabuzz slots, taka buzz slots, JILI slots bd, PG Soft bangladesh" canonical="https://www.tekkabuzz.win/slots" heading={t.heading} ctaText={t.ctaText} ctaLink="/go/slots" content={t.content} />;
 }

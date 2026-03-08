@@ -1,4 +1,9 @@
+import { useLocale } from "@/hooks/useLocale";
+import { GAME_PAGES } from "@/lib/gameTranslations";
 import GameInfoPage from "@/components/GameInfoPage";
+
 export default function TableGames() {
-  return <GameInfoPage title="TekkaBuzz Table Games | Taka Buzz Table Games Bangladesh" description="Play table games at TekkaBuzz. Baccarat, blackjack, roulette. Taka buzz table games Bangladesh." keywords="tekkabuzz table games, taka buzz table, tekka buzz table, online table games bd" canonical="https://www.tekkabuzz.win/table" heading="TekkaBuzz Table Games -- Classic Casino Experience" ctaText="Play Table Games" ctaLink="/go/table-games" content="<p>Experience classic casino table games at TekkaBuzz. Play baccarat, blackjack, roulette, poker, and more with both virtual and live dealer options. Our table games section features titles from top providers ensuring fair play and authentic casino atmosphere.</p><p>Whether you prefer the strategy of blackjack or the excitement of roulette, TekkaBuzz table games cater to all skill levels and budgets. Minimum bets start from 100 Taka with instant bKash and Nagad payouts.</p>" />;
+  const locale = useLocale();
+  const t = GAME_PAGES.table[locale];
+  return <GameInfoPage title={t.title} description={t.description} keywords="tekkabuzz table games, taka buzz table, online table games bd" canonical="https://www.tekkabuzz.win/table" heading={t.heading} ctaText={t.ctaText} ctaLink="/go/table-games" content={t.content} />;
 }

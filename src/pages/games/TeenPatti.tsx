@@ -1,15 +1,2 @@
-import GameInfoPage from "@/components/GameInfoPage";
-export default function TeenPatti() {
-  return (
-    <GameInfoPage
-      title="TekkaBuzz Teen Patti | তিন পাত্তি বাংলাদেশ"
-      description="Play Teen Patti at TekkaBuzz. India's favorite card game with live dealers. Win big with 3 Patti."
-      keywords="tekkabuzz teen patti, teen patti bangladesh, তিন পাত্তি, 3 patti online"
-      canonical="https://www.tekkabuzz.win/teen-patti"
-      heading="Play Teen Patti at TekkaBuzz"
-      ctaText="Play Teen Patti"
-      ctaLink="/go/casino"
-      content="<p>Teen Patti, the beloved South Asian card game, is now available at TekkaBuzz with live dealers.</p><p>Play classic Teen Patti or try exciting variants with side bets and multipliers. Perfect for Bangladeshi players who love card games.</p>"
-    />
-  );
-}
+import { useLocale } from "@/hooks/useLocale"; import { GAME_PAGES } from "@/lib/gameTranslations"; import GameInfoPage from "@/components/GameInfoPage";
+export default function TeenPatti() { const locale = useLocale(); const t = GAME_PAGES["teen-patti"][locale]; return <GameInfoPage title={t.title} description={t.description} keywords="tekkabuzz teen patti, তিন পাত্তি" canonical="https://www.tekkabuzz.win/teen-patti" heading={t.heading} ctaText={t.ctaText} ctaLink="/go/casino" content={t.content} />; }

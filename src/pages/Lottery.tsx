@@ -1,4 +1,9 @@
+import { useLocale } from "@/hooks/useLocale";
+import { GAME_PAGES } from "@/lib/gameTranslations";
 import GameInfoPage from "@/components/GameInfoPage";
+
 export default function Lottery() {
-  return <GameInfoPage title="TekkaBuzz Lottery | Taka Buzz Lottery Bangladesh" description="Play lottery at TekkaBuzz. Win jackpots with taka buzz lottery Bangladesh." keywords="tekkabuzz lottery, taka buzz lottery, tekka buzz lottery, online lottery bd" canonical="https://www.tekkabuzz.win/lottery" heading="TekkaBuzz Lottery -- Win Big Jackpots" ctaText="Play Lottery" ctaLink="/go/lottery" content="<p>Try your luck with TekkaBuzz lottery games. From instant scratch cards to number-based lottery draws, TekkaBuzz offers multiple ways to win massive jackpots. Simple gameplay, transparent draws, and instant payouts make our lottery section one of the most popular on the platform.</p><p>Lottery tickets start from just 50 Taka. Winnings are credited instantly and can be withdrawn via bKash, Nagad, or Rocket within minutes. TekkaBuzz -- your trusted <strong>taka buzz lottery</strong> destination.</p>" />;
+  const locale = useLocale();
+  const t = GAME_PAGES.lottery[locale];
+  return <GameInfoPage title={t.title} description={t.description} keywords="tekkabuzz lottery, taka buzz lottery, online lottery bd" canonical="https://www.tekkabuzz.win/lottery" heading={t.heading} ctaText={t.ctaText} ctaLink="/go/lottery" content={t.content} />;
 }
