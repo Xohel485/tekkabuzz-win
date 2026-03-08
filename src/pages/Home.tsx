@@ -55,7 +55,7 @@ export default function Home() {
       <GameCategories />
       <FeaturesSection />
       <PromotionsSection />
-      <PaymentMethods />
+      
       <ProviderMarquee />
       <SeoContent />
       <FaqSection />
