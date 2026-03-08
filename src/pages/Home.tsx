@@ -58,16 +58,36 @@ export default function Home() {
       <HeroSection />
       <BannerSlider />
       <Ticker />
-      <GameCategories />
-      <FeaturesSection />
-      <PromotionsSection />
-      <ProviderMarquee />
-      <Testimonials />
-      <CompetitorComparison />
-      <AppDownloadSection />
-      <SEOKeywordBlock />
-      <SeoContent />
-      <FaqSection />
+      <div className="content-auto contain-layout">
+        <GameCategories />
+      </div>
+      <div className="content-auto contain-layout">
+        <FeaturesSection />
+      </div>
+      <div className="content-auto contain-layout">
+        <PromotionsSection />
+      </div>
+      <div className="content-auto contain-layout">
+        <ProviderMarquee />
+      </div>
+      <div className="content-auto contain-layout">
+        <Testimonials />
+      </div>
+      <div className="content-auto contain-layout">
+        <CompetitorComparison />
+      </div>
+      <div className="content-auto contain-layout">
+        <AppDownloadSection />
+      </div>
+      <div className="content-auto contain-layout">
+        <SEOKeywordBlock />
+      </div>
+      <div className="content-auto contain-layout">
+        <SeoContent />
+      </div>
+      <div className="content-auto contain-layout">
+        <FaqSection />
+      </div>
     </Layout>
   );
 }
