@@ -56,14 +56,34 @@ const SOCIAL_LINKS = [
   { icon: XIcon, href: "/twitter", ariaLabel: "Twitter" },
 ];
 
-const TRUST_BADGES = [
-  { src: TRUST_ICONS.LICENSE_CURACAO, alt: "Gaming Curacao License" },
-  { src: TRUST_ICONS.LICENSE_3, alt: "Licensed & Certified" },
-  { src: TRUST_ICONS.GAMCARE, alt: "GamCare Certified" },
-  { src: TRUST_ICONS.AGE_18, alt: "18+ Only" },
-  { src: TRUST_ICONS.RESP_GAMBLING, alt: "Responsible Gambling" },
-  { src: TRUST_ICONS.CAZVIP, alt: "CazVIP Partner" },
-  { src: TRUST_ICONS.SUPPORT_24H, alt: "24/7 Support" },
+const TRUST_SECTIONS = [
+  {
+    title: "Gaming Licence",
+    badges: [
+      { src: TRUST_ICONS.LICENSE_CURACAO, alt: "Gaming Curacao License" },
+      { src: TRUST_ICONS.LICENSE_3, alt: "Licensed & Certified" },
+    ],
+  },
+  {
+    title: "Responsible Gaming",
+    badges: [
+      { src: TRUST_ICONS.GAMCARE, alt: "GamCare Certified" },
+      { src: TRUST_ICONS.AGE_18, alt: "18+ Only" },
+      { src: TRUST_ICONS.RESP_GAMBLING, alt: "Responsible Gambling" },
+    ],
+  },
+  {
+    title: "Gaming Alliance",
+    badges: [
+      { src: TRUST_ICONS.CAZVIP, alt: "CazVIP Partner" },
+    ],
+  },
+  {
+    title: "Customer Service",
+    badges: [
+      { src: TRUST_ICONS.SUPPORT_24H, alt: "24/7 Support" },
+    ],
+  },
 ];
 
 export default function Footer() {
