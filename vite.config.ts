@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger(),
     VitePWA({
+      injectRegister: null,
       registerType: "autoUpdate",
       includeAssets: ["images/tekkabuzz-favicon.jpg", "images/tekkabuzz-logo-cropped.png"],
       workbox: {
