@@ -70,6 +70,136 @@ const PAGE_CONTENT: Record<string, { heading: string; paragraphs: string[]; faqs
       { q: "Is the app free?", a: "Yes, the TekkaBuzz app is completely free to download and use." },
     ],
   },
+  "/deposit": {
+    heading: "How to Deposit on TekkaBuzz",
+    paragraphs: [
+      "Depositing money on TekkaBuzz is instant and secure. We support bKash, Nagad, Rocket, Upay, TAP, SureCash, iPay, OkWallet, bank cards, and cryptocurrency.",
+      "Minimum deposit is just 200 Taka. Simply log in to your account, go to the Deposit section, choose your preferred payment method, enter the amount, and confirm. Funds appear in your account within seconds.",
+      "All transactions are encrypted with 256-bit SSL security. TekkaBuzz never stores your payment credentials. For large deposits, our VIP team provides personalized assistance.",
+    ],
+    faqs: [
+      { q: "What is the minimum deposit on TekkaBuzz?", a: "The minimum deposit is 200 Taka via any supported payment method." },
+      { q: "How long does a deposit take?", a: "Deposits are instant. Your balance updates within seconds after confirmation." },
+      { q: "Which payment methods are supported?", a: "bKash, Nagad, Rocket, Upay, TAP, SureCash, iPay, OkWallet, bank cards, and cryptocurrency." },
+    ],
+  },
+  "/withdraw": {
+    heading: "How to Withdraw from TekkaBuzz",
+    paragraphs: [
+      "Withdraw your winnings from TekkaBuzz quickly and securely. We process all withdrawals within 5 minutes — the fastest in Bangladesh.",
+      "Go to the Withdraw section in your account, select your payment method (bKash, Nagad, Rocket, or bank transfer), enter the amount, and confirm. Minimum withdrawal is 500 Taka.",
+      "TekkaBuzz has paid out over 500 crore Taka to players. Our automated system ensures you get your money fast, every time.",
+    ],
+    faqs: [
+      { q: "How long does withdrawal take?", a: "Most withdrawals are processed within 5 minutes." },
+      { q: "What is the minimum withdrawal?", a: "The minimum withdrawal amount is 500 Taka." },
+      { q: "Can I withdraw to bKash?", a: "Yes, bKash is one of the most popular withdrawal methods on TekkaBuzz." },
+    ],
+  },
+  "/bkash": {
+    heading: "TekkaBuzz bKash — Deposit & Withdraw Instantly",
+    paragraphs: [
+      "bKash is the most popular payment method on TekkaBuzz. Deposit and withdraw instantly using your bKash personal account.",
+      "To deposit via bKash: Log in → Deposit → Select bKash → Enter amount → Follow bKash payment instructions. Minimum deposit 200 Taka. To withdraw: Go to Withdraw → Select bKash → Enter your bKash number and amount → Confirm.",
+      "bKash transactions on TekkaBuzz are processed 24/7 with zero fees. Over 15 million bKash transactions processed successfully.",
+    ],
+    faqs: [
+      { q: "How to deposit with bKash on TekkaBuzz?", a: "Log in, go to Deposit, select bKash, enter the amount, and follow the payment instructions." },
+      { q: "Is there a fee for bKash transactions?", a: "No, TekkaBuzz does not charge any fees for bKash deposits or withdrawals." },
+      { q: "How fast is bKash withdrawal?", a: "bKash withdrawals are processed within 5 minutes." },
+    ],
+  },
+  "/nagad": {
+    heading: "TekkaBuzz Nagad — Fast & Secure Payments",
+    paragraphs: [
+      "Use Nagad for instant deposits and withdrawals on TekkaBuzz. Nagad is Bangladesh's fastest-growing mobile financial service.",
+      "Deposit via Nagad in seconds — just select Nagad as your payment method, enter the amount, and complete the transaction through the Nagad app or USSD. Minimum 200 Taka.",
+      "Nagad withdrawals are processed within 5 minutes. Trusted by millions of Bangladeshi players on TekkaBuzz.",
+    ],
+    faqs: [
+      { q: "Can I deposit with Nagad?", a: "Yes, Nagad is fully supported for both deposits and withdrawals on TekkaBuzz." },
+      { q: "What is the minimum Nagad deposit?", a: "The minimum deposit via Nagad is 200 Taka." },
+    ],
+  },
+  "/rocket": {
+    heading: "TekkaBuzz Rocket — Dutch-Bangla Mobile Banking",
+    paragraphs: [
+      "Rocket by Dutch-Bangla Bank is a trusted payment option on TekkaBuzz. Deposit and withdraw using your Rocket account instantly.",
+      "Select Rocket as your payment method, enter the deposit amount, and complete the transaction. All Rocket transactions are processed within minutes.",
+    ],
+    faqs: [
+      { q: "Is Rocket accepted on TekkaBuzz?", a: "Yes, Rocket is fully supported for deposits and withdrawals." },
+      { q: "How to withdraw via Rocket?", a: "Go to Withdraw, select Rocket, enter your account number and amount, then confirm." },
+    ],
+  },
+  "/download": {
+    heading: "Download TekkaBuzz — Play Anywhere",
+    paragraphs: [
+      "Download the TekkaBuzz app and enjoy 6,300+ casino games on your mobile device. The app is optimized for fast performance even on low-speed networks.",
+      "Available for Android devices. Simply visit tekkabuzz.win from your mobile browser and tap the download button. No app store required — direct APK installation.",
+      "The TekkaBuzz app includes all features: live casino, sports betting, slots, crash games, instant deposits via bKash/Nagad, and push notifications for promotions.",
+    ],
+    faqs: [
+      { q: "Where can I download the TekkaBuzz app?", a: "Visit tekkabuzz.win from your mobile browser and tap the download/install button." },
+      { q: "Is the app available for iPhone?", a: "Currently the app is optimized for Android. iPhone users can play through the mobile website." },
+      { q: "Is the download free?", a: "Yes, the TekkaBuzz app is completely free to download." },
+    ],
+  },
+  "/app": {
+    heading: "TekkaBuzz Mobile App — Gaming on the Go",
+    paragraphs: [
+      "The TekkaBuzz mobile app brings Bangladesh's #1 casino to your fingertips. Play live casino, bet on sports, spin slots, and enjoy crash games — all from your phone.",
+      "Features include instant bKash/Nagad deposits, push notifications for bonuses, and a smooth interface designed for mobile gaming.",
+    ],
+    faqs: [
+      { q: "What can I do on the TekkaBuzz app?", a: "Play all 6,300+ games, deposit/withdraw money, claim bonuses, and access live support." },
+      { q: "Does the app use a lot of data?", a: "No, the app is optimized for low data usage, perfect for Bangladeshi mobile networks." },
+    ],
+  },
+  "/apk": {
+    heading: "TekkaBuzz APK Download — Direct Install",
+    paragraphs: [
+      "Download the TekkaBuzz APK file directly from our official website. No Google Play Store needed — install directly on your Android device.",
+      "The APK is lightweight (under 15MB), virus-free, and always updated. Enable 'Install from Unknown Sources' in your phone settings, then open the downloaded APK to install.",
+    ],
+    faqs: [
+      { q: "Is the TekkaBuzz APK safe?", a: "Yes, the APK from tekkabuzz.win is 100% safe, verified, and malware-free." },
+      { q: "How to install TekkaBuzz APK?", a: "Enable 'Unknown Sources' in settings, download the APK from tekkabuzz.win, and tap to install." },
+    ],
+  },
+  "/android": {
+    heading: "TekkaBuzz for Android — Best Casino App",
+    paragraphs: [
+      "TekkaBuzz for Android offers the smoothest mobile casino experience in Bangladesh. Compatible with Android 5.0 and above.",
+      "Enjoy full access to live casino tables, sports betting with live odds, 6,300+ slot games, and instant bKash/Nagad transactions. Optimized for all screen sizes.",
+    ],
+    faqs: [
+      { q: "What Android version is required?", a: "TekkaBuzz works on Android 5.0 (Lollipop) and above." },
+      { q: "Can I play live casino on Android?", a: "Yes, all live casino games stream perfectly on the TekkaBuzz Android app." },
+    ],
+  },
+  "/ios": {
+    heading: "TekkaBuzz for iOS — iPhone & iPad",
+    paragraphs: [
+      "Play TekkaBuzz on your iPhone or iPad through our mobile-optimized website. Full access to all games, deposits, and withdrawals.",
+      "Simply open Safari on your iOS device, visit tekkabuzz.win, and add it to your home screen for app-like experience. All features work seamlessly on iOS.",
+    ],
+    faqs: [
+      { q: "Can I play TekkaBuzz on iPhone?", a: "Yes, visit tekkabuzz.win on Safari and add to home screen for the best experience." },
+      { q: "Is there an iOS app?", a: "Use the mobile website on Safari — it works like a native app when added to home screen." },
+    ],
+  },
+  "/get-refercode": {
+    heading: "Get Your TekkaBuzz Referral Code",
+    paragraphs: [
+      "Share your unique TekkaBuzz referral code and earn 300 Taka for every friend who signs up and makes their first deposit.",
+      "Log in to your TekkaBuzz account, go to the Referral section, and copy your unique code. Share it on WhatsApp, Facebook, or any social media. There's no limit — refer 100 friends and earn 30,000 Taka!",
+    ],
+    faqs: [
+      { q: "How much do I earn per referral?", a: "You earn 300 Taka for every friend who signs up and deposits using your referral code." },
+      { q: "Is there a referral limit?", a: "No, there is no limit. Refer as many friends as you want and keep earning." },
+    ],
+  },
 };
 
 export default function RedirectPage({
