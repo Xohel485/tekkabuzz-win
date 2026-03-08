@@ -54,7 +54,7 @@ export default function Navbar() {
               <img
                 src={IMAGES.LOGO_HEADER}
                 alt="TekkaBuzz.win Logo"
-                className="h-6 sm:h-8 lg:h-10 w-auto object-contain"
+                className="h-5 sm:h-7 lg:h-10 w-auto max-w-[100px] sm:max-w-[140px] lg:max-w-none object-contain"
                 loading="eager"
               />
             </Link>
@@ -74,17 +74,17 @@ export default function Navbar() {
           </nav>
 
           {/* RIGHT: Login + SignUp + Download */}
-          <div className="flex items-center gap-2 flex-shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
             <Link
               to="/login"
-              className="px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-semibold border border-primary text-primary rounded-lg hover:bg-primary hover:text-primary-foreground active:scale-95 transition-all whitespace-nowrap"
+              className="px-2 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-semibold border border-primary text-primary rounded-lg hover:bg-primary hover:text-primary-foreground active:scale-95 transition-all whitespace-nowrap"
               aria-label="Login to TekkaBuzz"
             >
               Login
             </Link>
             <Link
               to="/signup"
-              className="px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-bold bg-primary text-primary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all whitespace-nowrap gold-shimmer"
+              className="px-2 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-bold bg-primary text-primary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all whitespace-nowrap gold-shimmer"
               aria-label="Sign up for TekkaBuzz"
             >
               Sign Up
