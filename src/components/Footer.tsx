@@ -145,7 +145,7 @@ export default function Footer() {
           <p className="text-muted-foreground/50 text-xs uppercase tracking-widest">{t.paymentMethods}</p>
           <div className="flex flex-wrap gap-4 justify-center items-center">
             {PAYMENT_ICONS.map((p) => (
-              <img key={p.name} src={p.url} alt={`${p.name} payment`} className="h-8 md:h-10 w-auto object-contain bg-white/10 rounded-md px-1.5 py-1" loading="lazy" />
+              <img key={p.name} src={p.url} alt={`${p.name} payment`} className="h-8 md:h-10 w-auto object-contain bg-white/10 rounded-md px-1.5 py-1" loading="lazy" width="60" height="32" />
             ))}
             <div className="h-8 md:h-10 bg-white/10 rounded-md px-2.5 py-1 flex items-center gap-1.5">
               <svg viewBox="0 0 24 24" fill="none" className="h-5 md:h-6 w-auto" aria-label="Bank Card payment">
