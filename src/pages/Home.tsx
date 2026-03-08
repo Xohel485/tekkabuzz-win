@@ -57,12 +57,12 @@ export default function Home() {
         <script type="application/ld+json">{JSON.stringify(FAQ_SCHEMA)}</script>
       </Helmet>
 
-      <HeroSection />
-      <BannerSlider />
-      <Ticker />
-      <div className="content-auto contain-layout">
-        <GameCategories />
-      </div>
+      <Suspense fallback={null}>
+        <BannerSlider />
+        <Ticker />
+        <div className="content-auto contain-layout">
+          <GameCategories />
+        </div>
       <Suspense fallback={null}>
         <div className="content-auto contain-layout">
           <FeaturesSection />
