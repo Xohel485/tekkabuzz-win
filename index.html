@@ -54,10 +54,11 @@
     <link rel="preload" as="image" href="/images/tekka-buzz-hero.png" fetchpriority="high" />
     <link rel="preload" as="image" href="/images/tekkabuzz-logo-cropped.png" />
 
-    <!-- Non-render-blocking Google Fonts -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap" media="print" onload="this.media='all'" />
+    <!-- Non-render-blocking Google Fonts — loaded async via JS -->
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap" /></noscript>
+    <script>
+    !function(){var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap";document.head.appendChild(l)}();
+    </script>
 
     <!-- Critical inline CSS for instant shell -->
     <style>
