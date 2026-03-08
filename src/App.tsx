@@ -294,7 +294,7 @@ const App = () => (
                 <Route path="/go/arcade" element={<RedirectPage seoTitle="TekkaBuzz Arcade" canonicalPath="/go/arcade" seoDesc="Arcade games at TekkaBuzz." seoKeywords={`tekkabuzz arcade, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20arcade" />} />
                 <Route path="/go/vip" element={<RedirectPage seoTitle="TekkaBuzz VIP" canonicalPath="/go/vip" seoDesc="TekkaBuzz VIP program." seoKeywords={`tekkabuzz vip, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20vip" />} />
                 <Route path="/go/table-games" element={<RedirectPage seoTitle="TekkaBuzz Table Games" canonicalPath="/go/table-games" seoDesc="Table games at TekkaBuzz." seoKeywords={`tekkabuzz table, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20table" />} />
-                <Route path="/go/live-dealer" element={<RedirectPage seoTitle="TekkaBuzz Live Dealer" canonicalPath="/go/live-dealer" seoDesc="Live dealer at TekkaBuzz." seoKeywords={`tekkabuzz live dealer, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20casino" />} />
+                <Route path="/go/live-dealer" element={<RedirectPage seoTitle="Play Live Dealer — TekkaBuzz Casino" canonicalPath="/go/live-dealer" seoDesc="Join live dealer tables at TekkaBuzz now. Professional dealers, HD streaming, Baccarat, Blackjack & Roulette with real-time action." seoKeywords={`tekkabuzz live dealer, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20casino" />} />
                 <Route path="/go/in" element={<RedirectPage seoTitle="TekkaBuzz IN" canonicalPath="/go/in" seoDesc="TekkaBuzz IN." seoKeywords={`tekkabuzz in, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20in" primaryDomain={D3_URL} useFailover={false} />} />
 
                 {/* Social media redirects */}
