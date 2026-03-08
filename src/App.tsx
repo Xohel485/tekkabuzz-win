@@ -118,7 +118,9 @@ const App = () => (
                 {localeRoutes("/terms", <Terms />)}
                 {localeRoutes("/privacy", <Privacy />)}
                 {localeRoutes("/responsible-gaming", <ResponsibleGaming />)}
-                {localeRoutes("/blog", <Blog />)}
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/bd/bn/blog" element={<LocalizedBlog />} />
+                <Route path="/pk/ur/blog" element={<LocalizedBlog />} />
                 {localeRoutes("/promotion", <Promotion />)}
                 {localeRoutes("/campaign", <Campaign />)}
                 {localeRoutes("/bonuses/welcome", <WelcomeBonus />)}
@@ -139,6 +141,8 @@ const App = () => (
 
                 {/* Dynamic blog posts from Firebase */}
                 <Route path="/blog/post/:slug" element={<DynamicBlogPost />} />
+                <Route path="/bd/bn/blog/post/:slug" element={<LocalizedPost />} />
+                <Route path="/pk/ur/blog/post/:slug" element={<LocalizedPost />} />
 
                 {/* Post routes (blog aliases) */}
                 <Route path="/post/*" element={<BlogRouter />} />
