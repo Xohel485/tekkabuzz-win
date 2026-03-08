@@ -198,7 +198,7 @@ const App = () => (
 
                 <Route path="/register" element={<RedirectPage seoTitle="TekkaBuzz Register" canonicalPath="/register" seoDesc="Register at TekkaBuzz." seoKeywords={`tekkabuzz register, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/Signup" primaryDomain={D2_URL} />} />
 
-                <Route path="/app/open" element={<RedirectPage seoTitle="TekkaBuzz App" canonicalPath="/app/open" seoDesc="Open TekkaBuzz app." seoKeywords={`tekkabuzz app, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/App" />} />
+                <Route path="/app/open" element={<RedirectPage seoTitle="Open TekkaBuzz App — Launch Your Casino" canonicalPath="/app/open" seoDesc="Launch the TekkaBuzz app directly from your browser. Instant access to 6300+ games, live casino, and sports betting." seoKeywords={`tekkabuzz app, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/App" />} />
                 <Route path="/get-refercode" element={<RedirectPage seoTitle="TekkaBuzz Referral Code" canonicalPath="/get-refercode" seoDesc="Get your TekkaBuzz referral code." seoKeywords={`tekkabuzz referral, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20refercode" />} />
 
                 {/* Deposit/Withdraw/Payment redirect pages */}
