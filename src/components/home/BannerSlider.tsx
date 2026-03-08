@@ -29,7 +29,8 @@ export default function BannerSlider() {
             <img
               src={banners[current]}
               alt={`TekkaBuzz Promotion ${current + 1}`}
-              className="w-full h-auto object-cover rounded-xl transition-opacity duration-500"
+              className="w-full object-cover rounded-xl transition-opacity duration-500"
+              style={{ aspectRatio: '3/1' }}
               loading={current === 0 ? "eager" : "lazy"}
               fetchPriority={current === 0 ? "high" : undefined}
               width={1200}
