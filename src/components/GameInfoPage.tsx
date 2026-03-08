@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import { ORGANIZATION_SCHEMA, OG_IMAGE } from "@/lib/seoSchema";
 
 interface GamePageProps {
   title: string;
@@ -22,9 +23,16 @@ export default function GameInfoPage({ title, description, keywords, canonical, 
         <meta name="keywords" content={keywords} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonical} />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content="https://i.ibb.co.com/VpJLpZpv/Tekka-Buzz-hero.png" />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={OG_IMAGE} />
+        <script type="application/ld+json">{JSON.stringify(ORGANIZATION_SCHEMA)}</script>
       </Helmet>
 
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-background">

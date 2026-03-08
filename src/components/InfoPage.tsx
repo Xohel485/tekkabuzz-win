@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import { ORGANIZATION_SCHEMA, OG_IMAGE } from "@/lib/seoSchema";
 
 interface Props {
   title: string;
@@ -20,6 +21,16 @@ export default function InfoPage({ title, description, keywords, canonical, head
         <meta name="keywords" content={keywords} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={canonical} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={OG_IMAGE} />
+        <script type="application/ld+json">{JSON.stringify(ORGANIZATION_SCHEMA)}</script>
       </Helmet>
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-background">
         <div className="max-w-4xl mx-auto">

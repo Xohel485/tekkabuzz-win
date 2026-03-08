@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { IMAGES, TRUST_ICONS, PAYMENT_ICONS } from "@/lib/images";
 
+const LOGO_CROPPED = "/images/tekkabuzz-logo-cropped.png";
+
 const GAME_LINKS = [
   { label: "Live Casino", to: "/casino" },
   { label: "Sports Betting", to: "/sports" },
@@ -55,14 +57,12 @@ export default function Footer() {
           {/* Col 1: Brand */}
           <div className="flex flex-col items-center text-center">
             <Link to="/" aria-label="TekkaBuzz Home">
-              <div style={{ height: "32px", overflow: "hidden", display: "flex", alignItems: "center" }}>
-                <img
-                  src={IMAGES.LOGO_FOOTER}
-                  alt="TekkaBuzz"
-                  style={{ height: "144px", width: "auto", marginTop: "-56px", objectFit: "contain" }}
-                  loading="lazy"
-                />
-              </div>
+              <img
+                src={LOGO_CROPPED}
+                alt="TekkaBuzz.win"
+                className="h-8 w-auto object-contain"
+                loading="lazy"
+              />
             </Link>
             <p className="text-muted-foreground text-xs leading-relaxed mt-3 mb-4">
               TekkaBuzz (tekkabuzz.win) — Official platform. Also known as Taka Buzz, Tekka Buzz, TkkaBuzz.
