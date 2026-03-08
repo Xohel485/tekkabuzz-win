@@ -58,6 +58,8 @@ export default function LanguageSwitcher() {
           src={currentLang.flag}
           alt={currentLang.label}
           className="w-full h-full object-cover"
+          width="24"
+          height="24"
         />
       </button>
       {open && (
