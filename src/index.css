@@ -85,6 +85,16 @@ header.sticky {
   }
 }
 
+/* Reflow containment for below-fold sections */
+.contain-layout {
+  contain: layout style paint;
+}
+
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
 @layer utilities {
   .gold-shimmer {
     background: linear-gradient(
@@ -96,18 +106,22 @@ header.sticky {
     );
     background-size: 200% 100%;
     animation: shimmer 2.5s ease-in-out infinite;
+    will-change: background-position;
   }
 
   .marquee {
     animation: marquee 30s linear infinite;
+    will-change: transform;
   }
 
   .marquee-reverse {
     animation: marquee-reverse 30s linear infinite;
+    will-change: transform;
   }
 
   .ticker-scroll {
     animation: ticker 25s linear infinite;
+    will-change: transform;
   }
 
   .fade-in-up {
