@@ -253,9 +253,9 @@ const App = () => (
                 <Route path="/partners" element={<RedirectPage seoTitle="TekkaBuzz Partners" canonicalPath="/partners" seoDesc="TekkaBuzz partner program." seoKeywords={`tekkabuzz partners, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20affiliate" />} />
 
                 {/* Support redirect pages */}
-                <Route path="/support" element={<RedirectPage seoTitle="TekkaBuzz Support" canonicalPath="/support" seoDesc="TekkaBuzz customer support." seoKeywords={`tekkabuzz support, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20login" />} />
-                <Route path="/help" element={<RedirectPage seoTitle="TekkaBuzz Help" canonicalPath="/help" seoDesc="TekkaBuzz help center." seoKeywords={`tekkabuzz help, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20login" />} />
-                <Route path="/live-chat" element={<RedirectPage seoTitle="TekkaBuzz Live Chat" canonicalPath="/live-chat" seoDesc="Chat with TekkaBuzz support team." seoKeywords={`tekkabuzz live chat, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20login" />} />
+                <Route path="/support" element={<RedirectPage seoTitle="TekkaBuzz Support — 24/7 Customer Help" canonicalPath="/support" seoDesc="Get 24/7 customer support at TekkaBuzz. Bengali & English agents available via live chat, Telegram, and email for instant help." seoKeywords={`tekkabuzz support, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20login" />} />
+                <Route path="/help" element={<RedirectPage seoTitle="TekkaBuzz Help Center — FAQs & Guides" canonicalPath="/help" seoDesc="Find answers to common questions about TekkaBuzz deposits, withdrawals, bonuses, and account issues in our help center." seoKeywords={`tekkabuzz help, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20login" />} />
+                <Route path="/live-chat" element={<RedirectPage seoTitle="TekkaBuzz Live Chat — Instant Support" canonicalPath="/live-chat" seoDesc="Chat live with TekkaBuzz support agents. Get instant help with deposits, withdrawals, bonuses and technical issues 24/7." seoKeywords={`tekkabuzz live chat, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20login" />} />
                 <Route path="/customer-service" element={<RedirectPage seoTitle="TekkaBuzz Customer Service" canonicalPath="/customer-service" seoDesc="TekkaBuzz customer service." seoKeywords={`tekkabuzz customer service, ${BASE_KW}`} affiliatePath="/af/9oI2NL83/tekkabuzz%20login" />} />
 
                 {/* Legal aliases */}
