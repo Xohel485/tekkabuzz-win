@@ -106,8 +106,8 @@ export default function Navbar() {
               onClick={() => { setOpen(false); handleInstallClick(); }}
               className="flex items-center justify-center gap-2 mt-3 px-4 py-3 border border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all w-full"
             >
-              <Download size={16} aria-hidden="true" />
-              {t.downloadApp}
+              {isInstalled ? <ExternalLink size={16} aria-hidden="true" /> : <Download size={16} aria-hidden="true" />}
+              {isInstalled ? t.openApp : t.downloadApp}
             </button>
           </nav>
         </div>
