@@ -38,8 +38,6 @@ export const PAYMENT_ICONS = [
   { name: "SureCash", url: "/images/payments/surecash.webp" },
   { name: "iPay", url: "/images/payments/ipay.webp" },
   { name: "OkWallet", url: "/images/payments/okwallet.webp" },
-  { name: "Bank Card", url: "/images/payments/bank-card.png" },
-  { name: "Crypto", url: "/images/payments/crypto.png" },
 ];
 
 export const TRUST_ICONS = {
