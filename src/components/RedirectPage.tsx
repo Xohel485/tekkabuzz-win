@@ -252,6 +252,9 @@ export default function RedirectPage({
         <meta name="keywords" content={seoKeywords} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`https://www.tekkabuzz.win${canonicalPath}`} />
+        {hreflangs.map((h, i) => (
+          <link key={i} rel={h.rel} hrefLang={h.hreflang} href={h.href} />
+        ))}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={`${seoTitle} | TekkaBuzz`} />
         <meta property="og:description" content={seoDesc} />
