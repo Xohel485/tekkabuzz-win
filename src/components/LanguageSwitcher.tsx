@@ -76,6 +76,8 @@ export default function LanguageSwitcher() {
                 src={lang.flag}
                 alt={lang.label}
                 className="w-5 h-5 rounded-full object-cover"
+                width="20"
+                height="20"
               />
               <span>{lang.label}</span>
             </button>
