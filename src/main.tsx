@@ -4,10 +4,7 @@ import "./index.css";
 
 createRoot(document.getElementById("root")!).render(<App />);
 
-// Suppress browser's automatic PWA install prompt/banner
-window.addEventListener("beforeinstallprompt", (e) => {
-  e.preventDefault();
-});
+// Note: beforeinstallprompt is handled by usePwaInstall hook on the /install page
 
 // Register service worker for fast caching
 if ("serviceWorker" in navigator) {
