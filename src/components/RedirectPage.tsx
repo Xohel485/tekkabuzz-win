@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { redirectWithFailover, D1 } from "@/lib/affiliateLinks";
-import { ORGANIZATION_SCHEMA, OG_IMAGE } from "@/lib/seoSchema";
+import { ORGANIZATION_SCHEMA, OG_IMAGE, hreflangTags } from "@/lib/seoSchema";
 
 interface Props {
   seoTitle: string;
