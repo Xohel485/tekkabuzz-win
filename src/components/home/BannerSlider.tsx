@@ -31,6 +31,8 @@ export default function BannerSlider() {
               alt={`TekkaBuzz Promotion ${current + 1}`}
               className="w-full h-auto object-cover rounded-xl transition-opacity duration-500"
               loading="lazy"
+              width={1200}
+              height={400}
             />
           </Link>
         </div>
