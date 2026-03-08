@@ -1,4 +1,9 @@
+import { useLocale } from "@/hooks/useLocale";
+import { GAME_PAGES } from "@/lib/gameTranslations";
 import GameInfoPage from "@/components/GameInfoPage";
+
 export default function Fishing() {
-  return <GameInfoPage title="TekkaBuzz Fishing Games | Taka Buzz Fishing Bangladesh" description="Play fishing games at TekkaBuzz. Win big with taka buzz fishing games Bangladesh." keywords="tekkabuzz fishing, taka buzz fishing, tekka buzz fishing, fishing games bd" canonical="https://www.tekkabuzz.win/fishing" heading="TekkaBuzz Fishing Games -- Catch Big Wins" ctaText="Play Fishing Games" ctaLink="/go/fishing" content="<p>TekkaBuzz fishing games offer an exciting and unique gaming experience. Aim your cannon, catch fish, and win prizes. The bigger the fish, the bigger the payout. With stunning underwater graphics and engaging gameplay, fishing games have become one of the most popular categories at TekkaBuzz.</p><p>Featuring titles from JILI, CQ9, and other top providers, our fishing games offer multipliers up to 1000x. Play solo or compete with other players in multiplayer fishing rooms. Deposits start at 200 Taka via bKash, Nagad, and Rocket.</p>" />;
+  const locale = useLocale();
+  const t = GAME_PAGES.fishing[locale];
+  return <GameInfoPage title={t.title} description={t.description} keywords="tekkabuzz fishing, taka buzz fishing, fishing games bd" canonical="https://www.tekkabuzz.win/fishing" heading={t.heading} ctaText={t.ctaText} ctaLink="/go/fishing" content={t.content} />;
 }

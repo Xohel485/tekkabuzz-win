@@ -1,4 +1,9 @@
+import { useLocale } from "@/hooks/useLocale";
+import { GAME_PAGES } from "@/lib/gameTranslations";
 import GameInfoPage from "@/components/GameInfoPage";
+
 export default function Crash() {
-  return <GameInfoPage title="TekkaBuzz Crash Games | Aviator JetX Spaceman Bangladesh" description="Aviator, JetX, Spaceman, Plinko crash games at TekkaBuzz. Provably fair, big multipliers, instant bKash withdrawal. Taka buzz crash games." keywords="tekkabuzz crash, tekka buzz crash, taka buzz aviator, aviator bangladesh, JetX bd, spaceman game" canonical="https://www.tekkabuzz.win/crash" heading="TekkaBuzz Crash Games -- Aviator, JetX, Spaceman" ctaText="Play Crash Games" ctaLink="/go/crash" content="<p>Crash games are the hottest trend in online gaming and TekkaBuzz brings you the best selection. Play Aviator, JetX, Spaceman, Plinko, and more with provably fair mechanics and massive multipliers reaching 1000x or higher.</p><p>The concept is simple -- watch the multiplier rise and cash out before it crashes. The longer you wait, the higher the potential payout, but crash too late and you lose your bet. It is pure adrenaline and skill combined.</p><p>TekkaBuzz crash games support bets starting from just 20 Taka, with instant payouts to bKash and Nagad. Join thousands of Bangladeshi players enjoying <strong>taka buzz crash games</strong> daily.</p>" />;
+  const locale = useLocale();
+  const t = GAME_PAGES.crash[locale];
+  return <GameInfoPage title={t.title} description={t.description} keywords="tekkabuzz crash, tekka buzz crash, aviator bangladesh, JetX bd" canonical="https://www.tekkabuzz.win/crash" heading={t.heading} ctaText={t.ctaText} ctaLink="/go/crash" content={t.content} />;
 }
