@@ -78,16 +78,14 @@ export default function Navbar() {
             <Link to="/signup" className="px-2 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-bold bg-primary text-primary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all whitespace-nowrap gold-shimmer" aria-label={t.signUp}>
               {t.signUp}
             </Link>
-            {!isInstalled && (
-              <button
-                onClick={handleInstallClick}
-                className="flex px-1.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-semibold bg-secondary text-secondary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all items-center gap-1"
-                title="Install TekkaBuzz App"
-              >
-                <Download className="w-3.5 h-3.5" aria-hidden="true" />
-                <span className="hidden sm:inline">{t.app}</span>
-              </button>
-            )}
+            <button
+              onClick={handleInstallClick}
+              className="flex px-1.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-semibold bg-secondary text-secondary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all items-center gap-1"
+              title="Install TekkaBuzz App"
+            >
+              <Download className="w-3.5 h-3.5" aria-hidden="true" />
+              <span className="hidden sm:inline">{t.app}</span>
+            </button>
           </div>
         </div>
       </div>
@@ -100,15 +98,13 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            {!isInstalled && (
-              <button
-                onClick={() => { setOpen(false); handleInstallClick(); }}
-                className="flex items-center justify-center gap-2 mt-3 px-4 py-3 border border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all w-full"
-              >
-                <Download size={16} aria-hidden="true" />
-                {t.downloadApp}
-              </button>
-            )}
+            <button
+              onClick={() => { setOpen(false); handleInstallClick(); }}
+              className="flex items-center justify-center gap-2 mt-3 px-4 py-3 border border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all w-full"
+            >
+              <Download size={16} aria-hidden="true" />
+              {t.downloadApp}
+            </button>
           </nav>
         </div>
       )}
