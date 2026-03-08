@@ -17,6 +17,7 @@ export const UI: Record<Locale, {
   signUpNow: string;
   downloadApp: string;
   app: string;
+  openApp: string;
   promos: string;
   support: string;
   // Footer
