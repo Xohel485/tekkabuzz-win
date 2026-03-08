@@ -1,6 +1,7 @@
 export const D1 = "https://tb08p27aff2025.com";
-export const D2 = "https://tekkabuzz.cc";
-export const D3 = "https://tekkabuzz.com";
+export const D2 = "https://tekkabuzz.com";
+export const D3 = "https://tekkabuzz.shop";
+export const D4 = "https://tekkabuzz.cc";
 
 export const AFF_PATH = {
   LOGIN: "/af/9oI2NL83/tekkabuzz%20login",
@@ -31,10 +32,12 @@ export async function redirectWithFailover(
   path: string,
   primaryDomain: string = D1
 ): Promise<void> {
-  const order =
-    primaryDomain === D2 ? [D2, D1, D3] :
-    primaryDomain === D3 ? [D3, D1, D2] :
-    [D1, D2, D3];
+  const allDomains = [D1, D2, D3, D4];
+  // Put primary first, then others in order
+  const order = [
+    primaryDomain,
+    ...allDomains.filter(d => d !== primaryDomain),
+  ];
 
   for (const domain of order) {
     try {
