@@ -8,6 +8,7 @@ import FeaturesSection from "@/components/home/FeaturesSection";
 import PromotionsSection from "@/components/home/PromotionsSection";
 import ProviderMarquee from "@/components/home/ProviderMarquee";
 import SeoContent from "@/components/home/SeoContent";
+import AppDownloadSection from "@/components/home/AppDownloadSection";
 import FaqSection from "@/components/home/FaqSection";
 import { ORGANIZATION_SCHEMA, WEBSITE_SCHEMA, OG_IMAGE, hreflangTags } from "@/lib/seoSchema";
 
@@ -58,6 +59,7 @@ export default function Home() {
       <FeaturesSection />
       <PromotionsSection />
       <ProviderMarquee />
+      <AppDownloadSection />
       <SeoContent />
       <FaqSection />
     </Layout>

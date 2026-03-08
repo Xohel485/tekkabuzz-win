@@ -33,6 +33,9 @@ const CashbackBonus = lazy(() => import("@/pages/bonuses/Cashback"));
 const ReferralBonus = lazy(() => import("@/pages/bonuses/Referral"));
 const TaskBonus = lazy(() => import("@/pages/bonuses/Task"));
 const BlogRouter = lazy(() => import("@/pages/blog/BlogRouter"));
+const AppDownload = lazy(() => import("@/pages/AppDownload"));
+const AdminBlog = lazy(() => import("@/pages/AdminBlog"));
+const DynamicBlogPost = lazy(() => import("@/pages/DynamicBlogPost"));
 
 // Game info pages
 const LiveCasino = lazy(() => import("@/pages/games/LiveCasino"));
@@ -105,10 +108,19 @@ const App = () => (
               {localeRoutes("/bonuses/referral", <ReferralBonus />)}
               {localeRoutes("/bonuses/task", <TaskBonus />)}
 
-              {/* Blog sub-routes */}
+              {/* App download / install */}
+              {localeRoutes("/install", <AppDownload />)}
+
+              {/* Admin blog */}
+              <Route path="/admin/blog" element={<AdminBlog />} />
+
+              {/* Blog sub-routes (static) */}
               <Route path="/blog/*" element={<BlogRouter />} />
               <Route path="/bd/bn/blog/*" element={<BlogRouter />} />
               <Route path="/pk/ur/blog/*" element={<BlogRouter />} />
+
+              {/* Dynamic blog posts from Firebase */}
+              <Route path="/blog/post/:slug" element={<DynamicBlogPost />} />
 
               {/* Game info pages */}
               {localeRoutes("/live-casino", <LiveCasino />)}

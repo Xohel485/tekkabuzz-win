@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import { useBlogPosts } from "@/hooks/useBlogPosts";
 
-const BLOG_POSTS = [
+const STATIC_POSTS = [
   { title: "Taka Buzz -- Complete Guide", to: "/blog/taka-buzz" },
   { title: "Tekka Buzz -- Most Trusted Platform", to: "/blog/tekka-buzz" },
   { title: "TkkaBuzz Official Guide", to: "/blog/tkkabuzz" },
@@ -28,6 +29,8 @@ const BLOG_POSTS = [
 ];
 
 export default function Blog() {
+  const { publishedPosts } = useBlogPosts();
+
   return (
     <Layout>
       <Helmet>
@@ -40,7 +43,18 @@ export default function Blog() {
         <div className="max-w-4xl mx-auto">
           <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-12">TekkaBuzz Blog</h1>
           <div className="grid gap-4">
-            {BLOG_POSTS.map((post) => (
+            {/* Dynamic posts from Firebase */}
+            {publishedPosts.map((post) => (
+              <Link key={post.id} to={`/blog/post/${post.slug}`} className="bg-card border border-border rounded-xl p-5 hover:border-primary transition-all flex items-center justify-between">
+                <div>
+                  <span className="font-medium text-foreground">{post.title}</span>
+                  <span className="text-xs text-muted-foreground ml-2">NEW</span>
+                </div>
+                <span className="text-primary text-sm">Read</span>
+              </Link>
+            ))}
+            {/* Static posts */}
+            {STATIC_POSTS.map((post) => (
               <Link key={post.to} to={post.to} className="bg-card border border-border rounded-xl p-5 hover:border-primary transition-all flex items-center justify-between">
                 <span className="font-medium text-foreground">{post.title}</span>
                 <span className="text-primary text-sm">Read</span>
