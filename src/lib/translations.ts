@@ -8,11 +8,40 @@ export const UI: Record<Locale, {
   games: string;
   liveCasino: string;
   sports: string;
+  sportsBetting: string;
   slots: string;
+  crashGames: string;
   affiliate: string;
   blog: string;
   faq: string;
   signUpNow: string;
+  downloadApp: string;
+  app: string;
+  promos: string;
+  support: string;
+  // Footer
+  gamesFooter: string;
+  info: string;
+  legal: string;
+  fishing: string;
+  lottery: string;
+  arcade: string;
+  tableGames: string;
+  about: string;
+  promotions: string;
+  contact: string;
+  vipProgram: string;
+  termsOfService: string;
+  privacyPolicy: string;
+  responsibleGaming: string;
+  paymentMethods: string;
+  gamingLicence: string;
+  responsibleGamingBadge: string;
+  gamingAlliance: string;
+  customerService: string;
+  footerDescription: string;
+  copyright: string;
+  language: string;
 }> = {
   en: {
     signUp: "Sign Up",
@@ -21,11 +50,39 @@ export const UI: Record<Locale, {
     games: "Games",
     liveCasino: "Live Casino",
     sports: "Sports",
+    sportsBetting: "Sports Betting",
     slots: "Slots",
+    crashGames: "Crash Games",
     affiliate: "Affiliate",
     blog: "Blog",
     faq: "FAQ",
     signUpNow: "Sign Up Now",
+    downloadApp: "Download App",
+    app: "App",
+    promos: "Promos",
+    support: "Support",
+    gamesFooter: "Games",
+    info: "Info",
+    legal: "Legal",
+    fishing: "Fishing",
+    lottery: "Lottery",
+    arcade: "Arcade",
+    tableGames: "Table Games",
+    about: "About",
+    promotions: "Promotions",
+    contact: "Contact",
+    vipProgram: "VIP Program",
+    termsOfService: "Terms of Service",
+    privacyPolicy: "Privacy Policy",
+    responsibleGaming: "Responsible Gaming",
+    paymentMethods: "Payment Methods",
+    gamingLicence: "Gaming Licence",
+    responsibleGamingBadge: "Responsible Gaming",
+    gamingAlliance: "Gaming Alliance",
+    customerService: "Customer Service",
+    footerDescription: "TekkaBuzz (tekkabuzz.win) — Official platform. Also known as Taka Buzz, Tekka Buzz, TkkaBuzz.",
+    copyright: "© 2026 TekkaBuzz Official (Taka Buzz | Tekka Buzz | TkkaBuzz). All Rights Reserved. 18+ Only. Gamble Responsibly. tekkabuzz.win is the ONLY official website.",
+    language: "Language",
   },
   bn: {
     signUp: "সাইন আপ",
@@ -34,11 +91,39 @@ export const UI: Record<Locale, {
     games: "গেমস",
     liveCasino: "লাইভ ক্যাসিনো",
     sports: "স্পোর্টস",
+    sportsBetting: "স্পোর্টস বেটিং",
     slots: "স্লটস",
+    crashGames: "ক্র্যাশ গেমস",
     affiliate: "অ্যাফিলিয়েট",
     blog: "ব্লগ",
     faq: "সচরাচর জিজ্ঞাসা",
     signUpNow: "এখনই সাইন আপ করুন",
+    downloadApp: "অ্যাপ ডাউনলোড",
+    app: "অ্যাপ",
+    promos: "প্রোমো",
+    support: "সাপোর্ট",
+    gamesFooter: "গেমস",
+    info: "তথ্য",
+    legal: "আইনি",
+    fishing: "ফিশিং",
+    lottery: "লটারি",
+    arcade: "আর্কেড",
+    tableGames: "টেবিল গেমস",
+    about: "আমাদের সম্পর্কে",
+    promotions: "প্রমোশন",
+    contact: "যোগাযোগ",
+    vipProgram: "ভিআইপি প্রোগ্রাম",
+    termsOfService: "সেবার শর্তাবলী",
+    privacyPolicy: "গোপনীয়তা নীতি",
+    responsibleGaming: "দায়িত্বশীল গেমিং",
+    paymentMethods: "পেমেন্ট পদ্ধতি",
+    gamingLicence: "গেমিং লাইসেন্স",
+    responsibleGamingBadge: "দায়িত্বশীল গেমিং",
+    gamingAlliance: "গেমিং অ্যালায়েন্স",
+    customerService: "কাস্টমার সার্ভিস",
+    footerDescription: "টেক্কাবাজ (tekkabuzz.win) — অফিসিয়াল প্ল্যাটফর্ম। Taka Buzz, Tekka Buzz, TkkaBuzz নামেও পরিচিত।",
+    copyright: "© ২০২৬ টেক্কাবাজ অফিসিয়াল। সর্বস্বত্ব সংরক্ষিত। শুধুমাত্র ১৮+। দায়িত্বের সাথে খেলুন। tekkabuzz.win একমাত্র অফিসিয়াল ওয়েবসাইট।",
+    language: "ভাষা",
   },
   ur: {
     signUp: "سائن اپ",
@@ -47,11 +132,39 @@ export const UI: Record<Locale, {
     games: "گیمز",
     liveCasino: "لائیو کیسینو",
     sports: "کھیل",
+    sportsBetting: "اسپورٹس بیٹنگ",
     slots: "سلاٹس",
+    crashGames: "کریش گیمز",
     affiliate: "ایفیلیٹ",
     blog: "بلاگ",
     faq: "عمومی سوالات",
     signUpNow: "ابھی سائن اپ کریں",
+    downloadApp: "ایپ ڈاؤن لوڈ",
+    app: "ایپ",
+    promos: "پروموز",
+    support: "سپورٹ",
+    gamesFooter: "گیمز",
+    info: "معلومات",
+    legal: "قانونی",
+    fishing: "فشنگ",
+    lottery: "لاٹری",
+    arcade: "آرکیڈ",
+    tableGames: "ٹیبل گیمز",
+    about: "ہمارے بارے میں",
+    promotions: "پروموشنز",
+    contact: "رابطہ",
+    vipProgram: "وی آئی پی پروگرام",
+    termsOfService: "سروس کی شرائط",
+    privacyPolicy: "رازداری کی پالیسی",
+    responsibleGaming: "ذمہ دار گیمنگ",
+    paymentMethods: "ادائیگی کے طریقے",
+    gamingLicence: "گیمنگ لائسنس",
+    responsibleGamingBadge: "ذمہ دار گیمنگ",
+    gamingAlliance: "گیمنگ الائنس",
+    customerService: "کسٹمر سروس",
+    footerDescription: "ٹیکابز (tekkabuzz.win) — آفیشل پلیٹ فارم۔ Taka Buzz, Tekka Buzz, TkkaBuzz کے نام سے بھی جانا جاتا ہے۔",
+    copyright: "© 2026 ٹیکابز آفیشل۔ جملہ حقوق محفوظ ہیں۔ صرف 18+۔ ذمہ داری سے کھیلیں۔ tekkabuzz.win واحد آفیشل ویب سائٹ ہے۔",
+    language: "زبان",
   },
 };
 
