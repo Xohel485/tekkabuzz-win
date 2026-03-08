@@ -1,15 +1,31 @@
 import { useEffect, useRef, useState } from "react";
+import { useLocale, type Locale } from "@/hooks/useLocale";
 
-const STATS = [
-  { target: 29000000, label: "Registered Players", suffix: "+" },
-  { target: 6300, label: "Games Available", suffix: "+" },
-  { target: 20000, label: "Taka Welcome Bonus", suffix: "" },
-  { target: 5, label: "Minutes Fastest Withdrawal", prefix: "Under " },
-];
+const T: Record<Locale, { label: string; prefix?: string; suffix?: string }[]> = {
+  en: [
+    { label: "Registered Players", suffix: "+" },
+    { label: "Games Available", suffix: "+" },
+    { label: "Taka Welcome Bonus" },
+    { label: "Minutes Fastest Withdrawal", prefix: "Under " },
+  ],
+  bn: [
+    { label: "নিবন্ধিত খেলোয়াড়", suffix: "+" },
+    { label: "গেমস উপলব্ধ", suffix: "+" },
+    { label: "টাকা ওয়েলকাম বোনাস" },
+    { label: "মিনিটে দ্রুত উত্তোলন", prefix: "মাত্র " },
+  ],
+  ur: [
+    { label: "رجسٹرڈ کھلاڑی", suffix: "+" },
+    { label: "دستیاب گیمز", suffix: "+" },
+    { label: "ٹاکا ویلکم بونس" },
+    { label: "منٹ میں تیز ترین نکلوائی", prefix: "صرف " },
+  ],
+};
+
+const TARGETS = [29000000, 6300, 20000, 5];
 
 function useCountUp(target: number, isVisible: boolean) {
   const [count, setCount] = useState(0);
-
   useEffect(() => {
     if (!isVisible) return;
     let start = 0;
@@ -17,16 +33,11 @@ function useCountUp(target: number, isVisible: boolean) {
     const step = target / (duration / 16);
     const timer = setInterval(() => {
       start += step;
-      if (start >= target) {
-        setCount(target);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(start));
-      }
+      if (start >= target) { setCount(target); clearInterval(timer); }
+      else setCount(Math.floor(start));
     }, 16);
     return () => clearInterval(timer);
   }, [target, isVisible]);
-
   return count;
 }
 
@@ -52,11 +63,14 @@ function StatItem({ target, label, suffix = "", prefix = "" }: { target: number;
 }
 
 export default function StatsCounter() {
+  const locale = useLocale();
+  const stats = T[locale];
+
   return (
     <section className="py-10 md:py-16 px-4 md:px-8 lg:px-16 bg-secondary">
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-        {STATS.map((s) => (
-          <StatItem key={s.label} {...s} />
+        {stats.map((s, i) => (
+          <StatItem key={i} target={TARGETS[i]} label={s.label} suffix={s.suffix} prefix={s.prefix} />
         ))}
       </div>
     </section>
