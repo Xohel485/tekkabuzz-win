@@ -22,7 +22,7 @@ export default function BlogPageTemplate({ title, description, keywords, canonic
         <link rel="canonical" href={canonical} />
         <meta property="og:title" content={title} />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content="https://tekkabuzz-win.lovable.app/images/tekka-buzz-hero.png" />
+        <meta property="og:image" content="https://www.tekkabuzz.win/images/tekka-buzz-hero.png" />
       </Helmet>
 
       <article className="py-16 px-4 md:px-8 lg:px-16 bg-background">
