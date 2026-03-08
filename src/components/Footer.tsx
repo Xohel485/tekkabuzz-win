@@ -171,7 +171,7 @@ export default function Footer() {
               <p className="text-muted-foreground/50 text-[10px] uppercase tracking-widest font-medium">{t[section.titleKey]}</p>
               <div className="flex flex-wrap gap-3 justify-center items-center">
                 {section.badges.map((b) => (
-                  <img key={b.alt} src={b.src} alt={b.alt} className="h-8 md:h-10 object-contain" loading="lazy" />
+                  <img key={b.alt} src={b.src} alt={b.alt} className="h-8 md:h-10 object-contain" loading="lazy" width="40" height="32" />
                 ))}
               </div>
             </div>
