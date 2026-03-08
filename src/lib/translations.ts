@@ -102,6 +102,7 @@ export const UI: Record<Locale, {
     signUpNow: "এখনই সাইন আপ করুন",
     downloadApp: "অ্যাপ ডাউনলোড",
     app: "অ্যাপ",
+    openApp: "ওপেন",
     promos: "প্রোমো",
     support: "সাপোর্ট",
     gamesFooter: "গেমস",
