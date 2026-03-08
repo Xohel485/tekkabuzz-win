@@ -21,7 +21,6 @@ export default function Navbar() {
       navigate("/app/open");
     }
   };
-  const t = UI[locale];
 
   const NAV_LINKS = [
     { label: t.liveCasino, to: "/casino" },
