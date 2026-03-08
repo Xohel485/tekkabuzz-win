@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Pencil, Trash2, Plus, Eye, EyeOff, RefreshCw } from "lucide-react";
 import { toast } from "sonner";
 import { ADMIN_UID } from "@/lib/firebase";
+import RichTextEditor from "@/components/RichTextEditor";
 import { SITE_URL } from "@/lib/seoSchema";
 import { ref, set } from "firebase/database";
 import { db } from "@/lib/firebase";
