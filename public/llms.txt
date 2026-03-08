@@ -38,12 +38,87 @@ Earn 300 Taka per referral with no limits. Visit https://www.tekkabuzz.win/affil
 - Arcade: https://www.tekkabuzz.win/arcade
 - Table Games: https://www.tekkabuzz.win/table
 - Affiliate: https://www.tekkabuzz.win/affiliate
+- Referral: https://www.tekkabuzz.win/referral
 - VIP Program: https://www.tekkabuzz.win/vip
 - Blog: https://www.tekkabuzz.win/blog
 - Promotions: https://www.tekkabuzz.win/promotion
+- Campaign: https://www.tekkabuzz.win/campaign
 - FAQ: https://www.tekkabuzz.win/faq
 - About: https://www.tekkabuzz.win/about
 - Contact: https://www.tekkabuzz.win/contact
+- Terms: https://www.tekkabuzz.win/terms
+- Privacy: https://www.tekkabuzz.win/privacy
+- Responsible Gaming: https://www.tekkabuzz.win/responsible-gaming
+- App Install: https://www.tekkabuzz.win/install
+- Login: https://www.tekkabuzz.win/login
+- Sign Up: https://www.tekkabuzz.win/signup
+- Deposit: https://www.tekkabuzz.win/deposit
+- Withdraw: https://www.tekkabuzz.win/withdraw
+
+## Game Pages
+- Live Casino: https://www.tekkabuzz.win/live-casino
+- Baccarat: https://www.tekkabuzz.win/baccarat
+- Blackjack: https://www.tekkabuzz.win/blackjack
+- Roulette: https://www.tekkabuzz.win/roulette
+- Poker: https://www.tekkabuzz.win/poker
+- Teen Patti: https://www.tekkabuzz.win/teen-patti
+- Andar Bahar: https://www.tekkabuzz.win/andar-bahar
+- Dragon Tiger: https://www.tekkabuzz.win/dragon-tiger
+- Esports: https://www.tekkabuzz.win/esports
+- Cricket Betting: https://www.tekkabuzz.win/cricket-betting
+- Football Betting: https://www.tekkabuzz.win/football-betting
+- Mines: https://www.tekkabuzz.win/mines
+- Plinko: https://www.tekkabuzz.win/plinko
+- Sports Betting: https://www.tekkabuzz.win/sports-betting
+
+## Game Landing Pages
+- Slots: https://www.tekkabuzz.win/games/slots
+- Live Casino: https://www.tekkabuzz.win/games/live-casino
+- Sports: https://www.tekkabuzz.win/games/sports
+- Crash: https://www.tekkabuzz.win/games/crash
+- Fishing: https://www.tekkabuzz.win/games/fishing
+- Arcade: https://www.tekkabuzz.win/games/arcade
+- Lottery: https://www.tekkabuzz.win/games/lottery
+- Table Games: https://www.tekkabuzz.win/games/table-games
+
+## Bonuses
+- Welcome Bonus: https://www.tekkabuzz.win/bonuses/welcome
+- Cashback: https://www.tekkabuzz.win/bonuses/cashback
+- Referral Bonus: https://www.tekkabuzz.win/bonuses/referral
+- Task Bonus: https://www.tekkabuzz.win/bonuses/task
+
+## Payment Pages
+- bKash: https://www.tekkabuzz.win/bkash
+- Nagad: https://www.tekkabuzz.win/nagad
+- Rocket: https://www.tekkabuzz.win/rocket
+
+## Blog Articles
+- Taka Buzz: https://www.tekkabuzz.win/blog/taka-buzz
+- Tekka Buzz: https://www.tekkabuzz.win/blog/tekka-buzz
+- TkkaBuzz: https://www.tekkabuzz.win/blog/tkkabuzz
+- TakkaBuzz: https://www.tekkabuzz.win/blog/takkabuzz
+- TekkaBaz: https://www.tekkabuzz.win/blog/tekkabaz
+- TekaBuzz: https://www.tekkabuzz.win/blog/tekabuzz
+- Teka Buzz: https://www.tekkabuzz.win/blog/teka-buzz
+- TeekaBuzz: https://www.tekkabuzz.win/blog/teekabuzz
+- Takka Buzz: https://www.tekkabuzz.win/blog/takka-buzz
+- TakkaBuz: https://www.tekkabuzz.win/blog/takkabuz
+- TakkBuzz: https://www.tekkabuzz.win/blog/takkbuzz
+- Tekk Buzz: https://www.tekkabuzz.win/blog/tekk-buzz
+- Tekka Buzz Login: https://www.tekkabuzz.win/blog/tekka-buzz-login
+- TekkaBuzz Login: https://www.tekkabuzz.win/blog/tekkabuzz-login
+- Tekka Buzz Affiliate: https://www.tekkabuzz.win/blog/tekka-buzz-affiliate
+- TekkaBuzz Affiliate: https://www.tekkabuzz.win/blog/tekkabuzz-affiliate
+- Tekka Baji: https://www.tekkabuzz.win/blog/tekka-baji
+- Tekka Buzz Bangladesh: https://www.tekkabuzz.win/blog/tekka-buzz-bangladesh
+- TekkaBuzz Bengali: https://www.tekkabuzz.win/blog/tekkabuzz-bengali
+- Tekka Buzz Bet: https://www.tekkabuzz.win/blog/tekka-buzz-bet
+- TekkaBuzz Casino: https://www.tekkabuzz.win/blog/tekkabuzz-casino
+- Taka Alliance Gaming: https://www.tekkabuzz.win/blog/taka-alliance-gaming
+
+## Localized Versions
+- Bengali: https://www.tekkabuzz.win/bd/bn
+- Urdu: https://www.tekkabuzz.win/pk/ur
 
 ## License
 Licensed under Gaming Curaçao. 18+ Only. Gamble Responsibly.
