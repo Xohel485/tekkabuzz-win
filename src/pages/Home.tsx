@@ -1,12 +1,12 @@
 import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
-import Ticker from "@/components/Ticker";
 import HeroSection from "@/components/home/HeroSection";
-import BannerSlider from "@/components/home/BannerSlider";
-import GameCategories from "@/components/home/GameCategories";
 import { ORGANIZATION_SCHEMA, WEBSITE_SCHEMA, OG_IMAGE, hreflangTags } from "@/lib/seoSchema";
 
+const Ticker = lazy(() => import("@/components/Ticker"));
+const BannerSlider = lazy(() => import("@/components/home/BannerSlider"));
+const GameCategories = lazy(() => import("@/components/home/GameCategories"));
 const FeaturesSection = lazy(() => import("@/components/home/FeaturesSection"));
 const PromotionsSection = lazy(() => import("@/components/home/PromotionsSection"));
 const ProviderMarquee = lazy(() => import("@/components/home/ProviderMarquee"));
@@ -58,12 +58,12 @@ export default function Home() {
       </Helmet>
 
       <HeroSection />
-      <BannerSlider />
-      <Ticker />
-      <div className="content-auto contain-layout">
-        <GameCategories />
-      </div>
       <Suspense fallback={null}>
+        <BannerSlider />
+        <Ticker />
+        <div className="content-auto contain-layout">
+          <GameCategories />
+        </div>
         <div className="content-auto contain-layout">
           <FeaturesSection />
         </div>
