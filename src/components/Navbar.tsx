@@ -67,18 +67,14 @@ export default function Navbar() {
             <Link to="/signup" className="px-2 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-bold bg-primary text-primary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all whitespace-nowrap gold-shimmer" aria-label={t.signUp}>
               {t.signUp}
             </Link>
-            <button
-              onClick={handleInstallClick}
+            <Link
+              to="/install"
               className="flex px-1.5 sm:px-3 py-1 sm:py-1.5 text-[11px] sm:text-sm font-semibold bg-secondary text-secondary-foreground rounded-lg hover:brightness-110 active:scale-95 transition-all items-center gap-1"
-              title={isInstalled ? "Open TekkaBuzz App" : "Install TekkaBuzz App"}
+              title="Install TekkaBuzz App"
             >
-              {isInstalled ? (
-                <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
-              ) : (
-                <Download className="w-3.5 h-3.5" aria-hidden="true" />
-              )}
-              <span className="hidden sm:inline">{isInstalled ? t.openApp : t.app}</span>
-            </button>
+              <Download className="w-3.5 h-3.5" aria-hidden="true" />
+              <span className="hidden sm:inline">{t.app}</span>
+            </Link>
           </div>
         </div>
       </div>
@@ -91,13 +87,14 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <button
-              onClick={() => { setOpen(false); handleInstallClick(); }}
+            <Link
+              to="/install"
+              onClick={() => setOpen(false)}
               className="flex items-center justify-center gap-2 mt-3 px-4 py-3 border border-primary text-primary rounded-lg font-bold hover:bg-primary hover:text-primary-foreground transition-all w-full"
             >
-              {isInstalled ? <ExternalLink size={16} aria-hidden="true" /> : <Download size={16} aria-hidden="true" />}
-              {isInstalled ? t.openApp : t.downloadApp}
-            </button>
+              <Download size={16} aria-hidden="true" />
+              {t.downloadApp}
+            </Link>
           </nav>
         </div>
       )}
