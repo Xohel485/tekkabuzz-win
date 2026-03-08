@@ -1,6 +1,7 @@
 export const D1 = "https://tb08p27aff2025.com";
-export const D2 = "https://tekkabuzz.cc";
-export const D3 = "https://tekkabuzz.com";
+export const D2 = "https://tekkabuzz.com";
+export const D3 = "https://tekkabuzz.shop";
+export const D4 = "https://tekkabuzz.cc";
 
 export const AFF_PATH = {
   LOGIN: "/af/9oI2NL83/tekkabuzz%20login",
