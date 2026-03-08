@@ -1,19 +1,21 @@
+import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import Ticker from "@/components/Ticker";
 import HeroSection from "@/components/home/HeroSection";
 import BannerSlider from "@/components/home/BannerSlider";
 import GameCategories from "@/components/home/GameCategories";
-import FeaturesSection from "@/components/home/FeaturesSection";
-import PromotionsSection from "@/components/home/PromotionsSection";
-import ProviderMarquee from "@/components/home/ProviderMarquee";
-import SeoContent from "@/components/home/SeoContent";
-import AppDownloadSection from "@/components/home/AppDownloadSection";
-import FaqSection from "@/components/home/FaqSection";
-import { Testimonials } from "@/components/Testimonials";
-import { CompetitorComparison } from "@/components/CompetitorComparison";
-import { SEOKeywordBlock } from "@/components/SEOKeywordBlock";
 import { ORGANIZATION_SCHEMA, WEBSITE_SCHEMA, OG_IMAGE, hreflangTags } from "@/lib/seoSchema";
+
+const FeaturesSection = lazy(() => import("@/components/home/FeaturesSection"));
+const PromotionsSection = lazy(() => import("@/components/home/PromotionsSection"));
+const ProviderMarquee = lazy(() => import("@/components/home/ProviderMarquee"));
+const SeoContent = lazy(() => import("@/components/home/SeoContent"));
+const AppDownloadSection = lazy(() => import("@/components/home/AppDownloadSection"));
+const FaqSection = lazy(() => import("@/components/home/FaqSection"));
+const Testimonials = lazy(() => import("@/components/Testimonials").then(m => ({ default: m.Testimonials })));
+const CompetitorComparison = lazy(() => import("@/components/CompetitorComparison").then(m => ({ default: m.CompetitorComparison })));
+const SEOKeywordBlock = lazy(() => import("@/components/SEOKeywordBlock").then(m => ({ default: m.SEOKeywordBlock })));
 
 const FAQ_SCHEMA = {
   "@context": "https://schema.org",
