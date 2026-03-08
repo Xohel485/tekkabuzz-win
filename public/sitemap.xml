@@ -1,30 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.tekkabuzz.win/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <!-- Home -->
+  <url><loc>https://www.tekkabuzz.win/</loc><lastmod>2026-03-08</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn</loc><lastmod>2026-03-08</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur</loc><lastmod>2026-03-08</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+
+  <!-- Main game categories -->
   <url><loc>https://www.tekkabuzz.win/casino</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/casino</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/casino</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/live-casino</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/live-casino</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/live-casino</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.tekkabuzz.win/sports</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/sports</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/sports</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/sports-betting</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/sports-betting</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/sports-betting</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.tekkabuzz.win/slots</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/slots</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/slots</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.tekkabuzz.win/crash</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/crash</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/crash</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.tekkabuzz.win/fishing</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/fishing</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/fishing</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.tekkabuzz.win/lottery</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/lottery</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/lottery</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.tekkabuzz.win/arcade</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/arcade</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/arcade</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.tekkabuzz.win/table</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.tekkabuzz.win/affiliate</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.tekkabuzz.win/referral</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.tekkabuzz.win/vip</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.tekkabuzz.win/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.tekkabuzz.win/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.tekkabuzz.win/faq</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.tekkabuzz.win/terms</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://www.tekkabuzz.win/privacy</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://www.tekkabuzz.win/responsible-gaming</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://www.tekkabuzz.win/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/table</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/table</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/table-games</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/table-games</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/table-games</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <!-- Specific game pages -->
+  <url><loc>https://www.tekkabuzz.win/baccarat</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/baccarat</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/baccarat</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/blackjack</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/blackjack</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/blackjack</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/roulette</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/roulette</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/roulette</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/poker</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/poker</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/poker</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/teen-patti</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/teen-patti</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/teen-patti</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/andar-bahar</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/andar-bahar</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/andar-bahar</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/dragon-tiger</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/dragon-tiger</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/dragon-tiger</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/esports</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/esports</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/esports</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/cricket-betting</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/cricket-betting</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/cricket-betting</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/football-betting</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/football-betting</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/football-betting</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/mines</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/mines</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/mines</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/plinko</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/plinko</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/plinko</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+
+  <!-- Games alias paths -->
+  <url><loc>https://www.tekkabuzz.win/games/slots</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/games/slots</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/games/slots</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/games/live-casino</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/games/live-casino</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/games/live-casino</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/games/sports</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/games/sports</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/games/sports</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/games/crash</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/games/crash</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/games/crash</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/games/fishing</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/games/fishing</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/games/fishing</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/games/arcade</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/games/arcade</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/games/arcade</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/games/lottery</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/games/lottery</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/games/lottery</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/games/table-games</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/games/table-games</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/games/table-games</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Promotions & bonuses -->
+  <url><loc>https://www.tekkabuzz.win/promotion</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/promotion</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/promotion</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/promotions</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/promotions</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/promotions</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/campaign</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/campaign</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/campaign</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.tekkabuzz.win/bonuses/welcome</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.tekkabuzz.win/bonuses/cashback</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.tekkabuzz.win/bonuses/referral</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/bonuses/welcome</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/bonuses/welcome</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bonuses/cashback</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/bonuses/cashback</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/bonuses/cashback</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bonuses/referral</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/bonuses/referral</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/bonuses/referral</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.tekkabuzz.win/bonuses/task</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.tekkabuzz.win/login</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.tekkabuzz.win/signup</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/bonuses/task</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/bonuses/task</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bonus</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/bonus</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/bonus</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/welcome-bonus</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/welcome-bonus</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/welcome-bonus</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/cashback</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/cashback</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/cashback</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <!-- Affiliate -->
+  <url><loc>https://www.tekkabuzz.win/affiliate</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/affiliate</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/affiliate</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/affiliate-program</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/affiliate-program</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/affiliate-program</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/referral</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/referral</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/referral</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/vip</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/vip</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/vip</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <!-- Info pages -->
+  <url><loc>https://www.tekkabuzz.win/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/faq</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/faq</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/faq</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/terms</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/terms</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/terms</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.tekkabuzz.win/terms-of-service</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/terms-of-service</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/terms-of-service</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/privacy</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/privacy</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/privacy</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.tekkabuzz.win/privacy-policy</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/privacy-policy</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/privacy-policy</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/responsible-gaming</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/responsible-gaming</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/responsible-gaming</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Auth / redirect pages -->
+  <url><loc>https://www.tekkabuzz.win/login</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/login</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/login</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/signup</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/signup</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/signup</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Payment pages -->
+  <url><loc>https://www.tekkabuzz.win/deposit</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/deposit</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/deposit</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/withdraw</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/withdraw</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/withdraw</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bkash</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/bkash</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/bkash</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/nagad</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/nagad</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/nagad</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/rocket</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/rocket</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/rocket</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- App download pages -->
+  <url><loc>https://www.tekkabuzz.win/download</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/download</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/download</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/app</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/app</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/app</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/apk</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/apk</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/apk</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/android</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/android</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/android</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/ios</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/ios</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/ios</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://www.tekkabuzz.win/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tekkabuzz.win/bd/bn/blog</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tekkabuzz.win/pk/ur/blog</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.tekkabuzz.win/blog/taka-buzz</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://www.tekkabuzz.win/blog/tekka-buzz</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://www.tekkabuzz.win/blog/tkkabuzz</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
