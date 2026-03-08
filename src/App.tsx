@@ -7,8 +7,8 @@ import { HelmetProvider } from "react-helmet-async";
 import { Suspense, lazy } from "react";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { PerformanceOptimizer } from "@/components/PerformanceOptimizer";
-import RedirectPage from "@/components/RedirectPage";
-import NotFound from "./pages/NotFound";
+const RedirectPage = lazy(() => import("@/components/RedirectPage"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const Home = lazy(() => import("@/pages/Home"));
 const Casino = lazy(() => import("@/pages/Casino"));
