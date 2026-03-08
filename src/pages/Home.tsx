@@ -6,7 +6,7 @@ import BannerSlider from "@/components/home/BannerSlider";
 import GameCategories from "@/components/home/GameCategories";
 import FeaturesSection from "@/components/home/FeaturesSection";
 import PromotionsSection from "@/components/home/PromotionsSection";
-import PaymentMethods from "@/components/home/PaymentMethods";
+
 import ProviderMarquee from "@/components/home/ProviderMarquee";
 import SeoContent from "@/components/home/SeoContent";
 import FaqSection from "@/components/home/FaqSection";
