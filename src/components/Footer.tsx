@@ -56,14 +56,34 @@ const SOCIAL_LINKS = [
   { icon: XIcon, href: "/twitter", ariaLabel: "Twitter" },
 ];
 
-const TRUST_BADGES = [
-  { src: TRUST_ICONS.LICENSE_CURACAO, alt: "Gaming Curacao License" },
-  { src: TRUST_ICONS.LICENSE_3, alt: "Licensed & Certified" },
-  { src: TRUST_ICONS.GAMCARE, alt: "GamCare Certified" },
-  { src: TRUST_ICONS.AGE_18, alt: "18+ Only" },
-  { src: TRUST_ICONS.RESP_GAMBLING, alt: "Responsible Gambling" },
-  { src: TRUST_ICONS.CAZVIP, alt: "CazVIP Partner" },
-  { src: TRUST_ICONS.SUPPORT_24H, alt: "24/7 Support" },
+const TRUST_SECTIONS = [
+  {
+    title: "Gaming Licence",
+    badges: [
+      { src: TRUST_ICONS.LICENSE_CURACAO, alt: "Gaming Curacao License" },
+      { src: TRUST_ICONS.LICENSE_3, alt: "Licensed & Certified" },
+    ],
+  },
+  {
+    title: "Responsible Gaming",
+    badges: [
+      { src: TRUST_ICONS.GAMCARE, alt: "GamCare Certified" },
+      { src: TRUST_ICONS.AGE_18, alt: "18+ Only" },
+      { src: TRUST_ICONS.RESP_GAMBLING, alt: "Responsible Gambling" },
+    ],
+  },
+  {
+    title: "Gaming Alliance",
+    badges: [
+      { src: TRUST_ICONS.CAZVIP, alt: "CazVIP Partner" },
+    ],
+  },
+  {
+    title: "Customer Service",
+    badges: [
+      { src: TRUST_ICONS.SUPPORT_24H, alt: "24/7 Support" },
+    ],
+  },
 ];
 
 export default function Footer() {
@@ -150,11 +170,18 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Trust badges */}
-      <div className="border-t border-border py-5">
-        <div className="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-5">
-          {TRUST_BADGES.map((b) => (
-            <img key={b.alt} src={b.src} alt={b.alt} className="h-8 md:h-10 object-contain" loading="lazy" />
+      {/* Trust badges - sectioned */}
+      <div className="border-t border-border py-6">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
+          {TRUST_SECTIONS.map((section) => (
+            <div key={section.title} className="flex flex-col items-center text-center gap-3">
+              <p className="text-muted-foreground/50 text-[10px] uppercase tracking-widest font-medium">{section.title}</p>
+              <div className="flex flex-wrap gap-3 justify-center items-center">
+                {section.badges.map((b) => (
+                  <img key={b.alt} src={b.src} alt={b.alt} className="h-8 md:h-10 object-contain" loading="lazy" />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
