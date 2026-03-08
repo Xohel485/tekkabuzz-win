@@ -154,7 +154,9 @@ export default function AdminBlog() {
               <Input placeholder="Meta Description" value={form.description} onChange={(e) => setForm({ ...form, description: e.target.value })} />
               <Input placeholder="Keywords (comma-separated)" value={form.keywords} onChange={(e) => setForm({ ...form, keywords: e.target.value })} />
             </div>
-            <Textarea placeholder="Content (HTML supported)" value={form.content} onChange={(e) => setForm({ ...form, content: e.target.value })} className="min-h-[200px] mb-4" />
+            <div className="mb-4">
+              <RichTextEditor value={form.content} onChange={(html) => setForm({ ...form, content: html })} />
+            </div>
             <div className="flex items-center gap-4">
               <label className="flex items-center gap-2 text-muted-foreground cursor-pointer">
                 <input type="checkbox" checked={form.published} onChange={(e) => setForm({ ...form, published: e.target.checked })} className="rounded" />
