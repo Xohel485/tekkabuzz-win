@@ -1,10 +1,13 @@
 import InfoPage from "@/components/InfoPage";
+import { useLocale } from "@/hooks/useLocale";
+import { PAGES } from "@/lib/translations";
+
 export default function Privacy() {
+  const locale = useLocale();
+  const t = PAGES.privacy[locale];
   return (
-    <InfoPage title="TekkaBuzz Privacy Policy" description="TekkaBuzz privacy policy. How we protect your data." keywords="tekkabuzz privacy, tekka buzz privacy policy" canonical="https://www.tekkabuzz.win/privacy" heading="Privacy Policy">
-      <p>TekkaBuzz is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information.</p>
-      <p>We collect information necessary to provide our services, including your name, mobile number, and payment details. This information is encrypted and stored securely.</p>
-      <p>TekkaBuzz does not share your personal information with third parties except as required by law or to process your transactions.</p>
+    <InfoPage title={t.title} description={t.description} keywords="tekkabuzz privacy, tekka buzz privacy policy, টেক্কাবাজ গোপনীয়তা" canonical="https://www.tekkabuzz.win/privacy" heading={t.heading}>
+      {t.content.map((p, i) => <p key={i}>{p}</p>)}
     </InfoPage>
   );
 }
