@@ -10,17 +10,9 @@ import ProviderMarquee from "@/components/home/ProviderMarquee";
 import SeoContent from "@/components/home/SeoContent";
 import AppDownloadSection from "@/components/home/AppDownloadSection";
 import FaqSection from "@/components/home/FaqSection";
-import Testimonials from "@/components/Testimonials";
-import CompetitorComparison from "@/components/CompetitorComparison";
-import SEOKeywordBlock from "@/components/SEOKeywordBlock";
-import BannerSlider from "@/components/home/BannerSlider";
-import GameCategories from "@/components/home/GameCategories";
-import FeaturesSection from "@/components/home/FeaturesSection";
-import PromotionsSection from "@/components/home/PromotionsSection";
-import ProviderMarquee from "@/components/home/ProviderMarquee";
-import SeoContent from "@/components/home/SeoContent";
-import AppDownloadSection from "@/components/home/AppDownloadSection";
-import FaqSection from "@/components/home/FaqSection";
+import { Testimonials } from "@/components/Testimonials";
+import { CompetitorComparison } from "@/components/CompetitorComparison";
+import { SEOKeywordBlock } from "@/components/SEOKeywordBlock";
 import { ORGANIZATION_SCHEMA, WEBSITE_SCHEMA, OG_IMAGE, hreflangTags } from "@/lib/seoSchema";
 
 const FAQ_SCHEMA = {
@@ -70,7 +62,10 @@ export default function Home() {
       <FeaturesSection />
       <PromotionsSection />
       <ProviderMarquee />
+      <Testimonials />
+      <CompetitorComparison />
       <AppDownloadSection />
+      <SEOKeywordBlock />
       <SeoContent />
       <FaqSection />
     </Layout>
