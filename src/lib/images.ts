@@ -7,15 +7,15 @@ export const IMAGES = {
 };
 
 export const BANNERS = [
-  "/images/banners/banner-1.png",
-  "/images/banners/banner-2.png",
-  "/images/banners/banner-3.png",
-  "/images/banners/banner-4.png",
-  "/images/banners/banner-5.png",
-  "/images/banners/banner-6.png",
-  "/images/banners/banner-7.png",
-  "/images/banners/banner-8.png",
-  "/images/banners/banner-9.png",
+  "/images/banners/banner-1.webp",
+  "/images/banners/banner-2.webp",
+  "/images/banners/banner-3.webp",
+  "/images/banners/banner-4.webp",
+  "/images/banners/banner-5.webp",
+  "/images/banners/banner-6.webp",
+  "/images/banners/banner-7.webp",
+  "/images/banners/banner-8.webp",
+  "/images/banners/banner-9.webp",
 ];
 
 export const GAME_ICONS = {
