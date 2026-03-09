@@ -1,6 +1,6 @@
 export const IMAGES = {
-  LOGO_HEADER: "/images/tekkabuzz-logo-cropped.png",
-  LOGO_FOOTER: "/images/tekkabuzz-win-logo.png",
+  LOGO_HEADER: "/images/tekabuzz-logo.webp",
+  LOGO_FOOTER: "/images/tekabuzz-footer-logo.webp",
   HERO_MAIN: "/images/tekka-buzz-hero.png",
   HERO_FEATURED: "/images/hero-featured.png",
   FAVICON: "/images/tekkabuzz-favicon.webp",
