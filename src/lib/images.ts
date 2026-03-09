@@ -1,8 +1,8 @@
 export const IMAGES = {
   LOGO_HEADER: "/images/tekabuzz-logo.webp",
   LOGO_FOOTER: "/images/tekabuzz-footer-logo.webp",
-  HERO_MAIN: "/images/tekka-buzz-hero.png",
-  HERO_FEATURED: "/images/hero-featured.png",
+  HERO_MAIN: "/images/tekka-buzz-hero.webp",
+  HERO_FEATURED: "/images/hero-featured.webp",
   FAVICON: "/images/tekkabuzz-favicon.webp",
 };
 
