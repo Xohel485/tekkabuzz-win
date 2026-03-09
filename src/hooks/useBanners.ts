@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { ref, onValue } from "firebase/database";
+import { db } from "@/lib/firebase";
 import { BANNERS } from "@/lib/images";
 
 interface Banner {
@@ -11,34 +13,25 @@ export function useBanners() {
   const [banners, setBanners] = useState<string[]>(BANNERS);
 
   useEffect(() => {
-    let unsub: (() => void) | undefined;
-
-    (async () => {
-      try {
-        const [{ ref, onValue }, { db }] = await Promise.all([
-          import("firebase/database"),
-          import("@/lib/firebase"),
-        ]);
-        const bannersRef = ref(db, "banners");
-        unsub = onValue(bannersRef, (snap) => {
-          if (snap.exists()) {
-            const data = snap.val();
-            const items: Banner[] = Object.values(data);
-            const active = items
-              .filter((b) => b.active)
-              .sort((a, b) => a.order - b.order)
-              .map((b) => b.url);
-            if (active.length > 0) setBanners(active);
-          }
-        }, () => {
-          // fallback to defaults
-        });
-      } catch {
+    try {
+      const bannersRef = ref(db, "banners");
+      const unsub = onValue(bannersRef, (snap) => {
+        if (snap.exists()) {
+          const data = snap.val();
+          const items: Banner[] = Object.values(data);
+          const active = items
+            .filter((b) => b.active)
+            .sort((a, b) => a.order - b.order)
+            .map((b) => b.url);
+          if (active.length > 0) setBanners(active);
+        }
+      }, () => {
         // fallback to defaults
-      }
-    })();
-
-    return () => unsub?.();
+      });
+      return () => unsub();
+    } catch {
+      return;
+    }
   }, []);
 
   return banners;
