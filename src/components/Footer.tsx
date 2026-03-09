@@ -181,7 +181,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="border-t border-border py-4">
-        <p className="text-center text-muted-foreground/40 text-xs px-4 leading-relaxed">{t.copyright}</p>
+        <p className="text-center text-muted-foreground text-xs px-4 leading-relaxed">{t.copyright}</p>
       </div>
     </footer>
   );
