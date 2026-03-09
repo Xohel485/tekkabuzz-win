@@ -142,7 +142,7 @@ export default function Footer() {
       {/* Payment icons */}
       <div className="border-t border-border py-6">
         <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
-          <p className="text-muted-foreground/50 text-xs uppercase tracking-widest">{t.paymentMethods}</p>
+          <p className="text-muted-foreground text-xs uppercase tracking-widest">{t.paymentMethods}</p>
           <div className="flex flex-wrap gap-4 justify-center items-center">
             {PAYMENT_ICONS.map((p) => (
               <img key={p.name} src={p.url} alt={`${p.name} payment`} className="h-8 md:h-10 w-auto object-contain bg-white/10 rounded-md px-1.5 py-1" loading="lazy" width="60" height="32" />
@@ -168,7 +168,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6">
           {TRUST_SECTIONS_DATA.map((section) => (
             <div key={section.titleKey} className="flex flex-col items-center text-center gap-3">
-              <p className="text-muted-foreground/50 text-[10px] uppercase tracking-widest font-medium">{t[section.titleKey]}</p>
+              <p className="text-muted-foreground text-[10px] uppercase tracking-widest font-medium">{t[section.titleKey]}</p>
               <div className="flex flex-wrap gap-3 justify-center items-center">
                 {section.badges.map((b) => (
                   <img key={b.alt} src={b.src} alt={b.alt} className="h-8 md:h-10 object-contain" loading="lazy" width="40" height="32" />
@@ -181,7 +181,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="border-t border-border py-4">
-        <p className="text-center text-muted-foreground/40 text-xs px-4 leading-relaxed">{t.copyright}</p>
+        <p className="text-center text-muted-foreground text-xs px-4 leading-relaxed">{t.copyright}</p>
       </div>
     </footer>
   );

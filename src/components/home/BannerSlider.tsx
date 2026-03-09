@@ -61,9 +61,11 @@ export default function BannerSlider() {
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className={`w-2.5 h-2.5 rounded-full transition-all ${i === current ? "bg-primary w-6" : "bg-border"}`}
+              className={`min-w-[44px] min-h-[44px] flex items-center justify-center`}
               aria-label={`Go to banner ${i + 1}`}
-            />
+            >
+              <span className={`block rounded-full transition-all ${i === current ? "bg-primary w-6 h-2.5" : "bg-border w-2.5 h-2.5"}`} />
+            </button>
           ))}
         </div>
       </div>
