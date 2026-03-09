@@ -142,7 +142,7 @@ export default function Footer() {
       {/* Payment icons */}
       <div className="border-t border-border py-6">
         <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
-          <p className="text-muted-foreground/50 text-xs uppercase tracking-widest">{t.paymentMethods}</p>
+          <p className="text-muted-foreground text-xs uppercase tracking-widest">{t.paymentMethods}</p>
           <div className="flex flex-wrap gap-4 justify-center items-center">
             {PAYMENT_ICONS.map((p) => (
               <img key={p.name} src={p.url} alt={`${p.name} payment`} className="h-8 md:h-10 w-auto object-contain bg-white/10 rounded-md px-1.5 py-1" loading="lazy" width="60" height="32" />
