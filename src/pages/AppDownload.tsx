@@ -104,7 +104,7 @@ export default function AppDownload() {
         <div className="max-w-3xl mx-auto text-center">
           {/* Hero */}
           <div className="mb-8">
-            <img src="/images/tekkabuzz-logo-cropped.png" alt="TekkaBuzz App" className="w-24 h-24 mx-auto rounded-2xl shadow-lg mb-6" loading="lazy" />
+            <img src="/images/tekkabuzz-logo-cropped.webp" alt="TekkaBuzz App" className="w-24 h-24 mx-auto rounded-2xl shadow-lg mb-6" loading="lazy" /> className="w-24 h-24 mx-auto rounded-2xl shadow-lg mb-6" loading="lazy" />
             <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">{c.heading}</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">{c.subtitle}</p>
           </div>
