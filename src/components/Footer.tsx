@@ -4,7 +4,7 @@ import { IMAGES, TRUST_ICONS, PAYMENT_ICONS } from "@/lib/images";
 import { useLocale } from "@/hooks/useLocale";
 import { UI } from "@/lib/translations";
 
-const LOGO_CROPPED = "/images/tekkabuzz-logo-cropped.png";
+const LOGO_CROPPED = "/images/tekabuzz-footer-logo.webp";
 
 const TelegramIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">

@@ -272,7 +272,7 @@ export default function RedirectPage({
         {/* Redirect indicator */}
         <div className="flex flex-col items-center justify-center py-16 px-8">
           <img
-            src="/images/tekkabuzz-logo-cropped.png"
+            src="/images/tekabuzz-logo.webp"
             alt="TekkaBuzz"
             className="h-10 mb-6 object-contain"
             loading="eager"
