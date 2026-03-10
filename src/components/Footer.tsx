@@ -37,6 +37,7 @@ const TRUST_SECTIONS_DATA = [
     badges: [
       { src: TRUST_ICONS.LICENSE_CURACAO, alt: "Gaming Curacao License" },
       { src: TRUST_ICONS.LICENSE_3, alt: "Licensed & Certified" },
+      { src: TRUST_ICONS.LICENSE_MONTENEGRO, alt: "Montenegro License" },
     ],
   },
   {
