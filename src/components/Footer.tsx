@@ -37,6 +37,7 @@ const TRUST_SECTIONS_DATA = [
     badges: [
       { src: TRUST_ICONS.LICENSE_CURACAO, alt: "Gaming Curacao License" },
       { src: TRUST_ICONS.LICENSE_3, alt: "Licensed & Certified" },
+      { src: TRUST_ICONS.LICENSE_MONTENEGRO, alt: "Montenegro License" },
     ],
   },
   {
@@ -144,21 +145,9 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
           <p className="text-muted-foreground text-xs uppercase tracking-widest">{t.paymentMethods}</p>
           <div className="flex flex-wrap gap-4 justify-center items-center">
-            {PAYMENT_ICONS.map((p) => (
+          {PAYMENT_ICONS.map((p) => (
               <img key={p.name} src={p.url} alt={`${p.name} payment`} className="h-8 md:h-10 w-auto object-contain bg-white/10 rounded-md px-1.5 py-1" loading="lazy" width="60" height="32" />
             ))}
-            <div className="h-8 md:h-10 bg-white/10 rounded-md px-2.5 py-1 flex items-center gap-1.5">
-              <svg viewBox="0 0 24 24" fill="none" className="h-5 md:h-6 w-auto" aria-label="Bank Card payment">
-                <rect x="1" y="4" width="22" height="16" rx="3" fill="#1565C0"/><rect x="1" y="8" width="22" height="3" fill="#0D47A1"/><rect x="3" y="14" width="6" height="2" rx="1" fill="#E3F2FD"/><rect x="3" y="17" width="4" height="1" rx="0.5" fill="#90CAF9"/><circle cx="18" cy="15.5" r="2.5" fill="#FF9800"/><circle cx="20.5" cy="15.5" r="2.5" fill="#F44336" opacity="0.8"/>
-              </svg>
-              <span className="text-[10px] text-muted-foreground font-medium hidden sm:inline">Bank Card</span>
-            </div>
-            <div className="h-8 md:h-10 bg-white/10 rounded-md px-2.5 py-1 flex items-center gap-1.5">
-              <svg viewBox="0 0 24 24" fill="none" className="h-5 md:h-6 w-auto" aria-label="Crypto payment">
-                <circle cx="12" cy="12" r="11" fill="#F7931A"/><path d="M16.662 10.661c.227-1.513-0.926-2.326-2.5-2.868l.511-2.05-1.248-.311-.498 1.996c-.328-.082-.665-.159-1-.236l.501-2.009-1.247-.311-.511 2.05c-.271-.062-.538-.123-.796-.187l.001-.007-1.721-.43-.332 1.333s.926.212.906.225c.505.126.596.461.581.727l-.582 2.332c.035.009.08.022.13.042l-.132-.033-.815 3.268c-.062.153-.218.383-.572.296.013.018-.907-.226-.907-.226l-.619 1.429 1.624.405c.302.076.598.155.889.229l-.516 2.074 1.246.311.512-2.052c.34.092.671.177.994.257l-.51 2.044 1.248.311.516-2.07c2.125.402 3.723.24 4.395-1.683.541-1.547-.027-2.44-1.145-3.022.814-.188 1.427-.724 1.59-1.831zm-2.846 3.989c-.385 1.546-2.987.71-3.831.5l.683-2.741c.844.211 3.548.628 3.148 2.241zm.384-4.012c-.35 1.406-2.517.691-3.219.516l.62-2.485c.702.175 2.963.502 2.599 1.969z" fill="white"/>
-              </svg>
-              <span className="text-[10px] text-muted-foreground font-medium hidden sm:inline">Crypto</span>
-            </div>
           </div>
         </div>
       </div>
