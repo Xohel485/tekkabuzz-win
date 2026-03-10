@@ -19,14 +19,14 @@ export const BANNERS = [
 ];
 
 export const GAME_ICONS = {
-  CASINO: "/images/games/casino.png",
-  SPORT: "/images/games/sport.png",
-  SLOT: "/images/games/slot.png",
-  CRASH: "/images/games/crash.png",
-  FISHING: "/images/games/fishing.png",
-  LOTTERY: "/images/games/lottery.png",
-  ARCADE: "/images/games/arcade.png",
-  TABLE: "/images/games/table.png",
+  CASINO: "/images/games/casino.webp",
+  SPORT: "/images/games/sport.webp",
+  SLOT: "/images/games/slot.webp",
+  CRASH: "/images/games/crash.webp",
+  FISHING: "/images/games/fishing.webp",
+  LOTTERY: "/images/games/lottery.webp",
+  ARCADE: "/images/games/arcade.webp",
+  TABLE: "/images/games/table.webp",
 };
 
 export const PAYMENT_ICONS = [
@@ -38,16 +38,22 @@ export const PAYMENT_ICONS = [
   { name: "SureCash", url: "/images/payments/surecash.webp" },
   { name: "iPay", url: "/images/payments/ipay.webp" },
   { name: "OkWallet", url: "/images/payments/okwallet.webp" },
+  { name: "EasyPaisa", url: "/images/payments/easypaisa.png" },
+  { name: "JazzCash", url: "/images/payments/jazz-cash.png" },
+  { name: "Bank Deposit", url: "/images/payments/bank-deposit.png" },
+  { name: "Bank Card", url: "/images/payments/bank-card.png" },
+  { name: "Crypto", url: "/images/payments/crypto.png" },
 ];
 
 export const TRUST_ICONS = {
   LICENSE_CURACAO: "/images/trust/gaming-curacao.webp",
   LICENSE_3: "/images/trust/license3.png",
+  LICENSE_MONTENEGRO: "/images/trust/montenegro-license.png",
   GAMCARE: "/images/trust/gamcare.webp",
   AGE_18: "/images/trust/age-18.webp",
   RESP_GAMBLING: "/images/trust/responsible-gambling.webp",
-  CAZVIP: "/images/trust/cazvip.png",
-  SUPPORT_24H: "/images/trust/24h-support.png",
+  CAZVIP: "/images/trust/cazvip.webp",
+  SUPPORT_24H: "/images/trust/24h-support.webp",
 };
 
 export const PROVIDER_LOGOS = Array.from({ length: 48 }, (_, i) => `/images/providers/p-${String(i + 1).padStart(2, "0")}.png`);
