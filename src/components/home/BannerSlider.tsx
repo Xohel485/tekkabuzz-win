@@ -56,7 +56,7 @@ export default function BannerSlider() {
               className="w-full object-cover rounded-xl transition-opacity duration-500"
               style={{ aspectRatio: '3/1' }}
               loading={current === 0 ? "eager" : "lazy"}
-              fetchPriority={current === 0 ? "high" : undefined}
+              fetchPriority={current === 0 ? "high" : "low"}
               width={1200}
               height={400}
               decoding={current === 0 ? "sync" : "async"}
