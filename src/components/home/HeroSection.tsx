@@ -76,8 +76,8 @@ export default function HeroSection() {
             {t.appLink}
           </Link>
         </div>
-        <div className="flex justify-center">
-          <img src={IMAGES.HERO_MAIN} alt="TekkaBuzz.win Casino Bangladesh" className="w-full max-w-xs md:max-w-md drop-shadow-2xl" loading="eager" fetchPriority="high" width={400} height={400} decoding="sync" />
+        <div className="flex justify-center mt-4 lg:mt-0">
+          <img src={IMAGES.HERO_MAIN} alt="TekkaBuzz.win Casino Bangladesh" className="w-48 sm:w-56 md:w-72 lg:w-full lg:max-w-md drop-shadow-[0_0_30px_hsl(var(--primary)/0.3)] mix-blend-lighten" loading="eager" fetchPriority="high" width={400} height={400} decoding="sync" />
         </div>
       </div>
 
