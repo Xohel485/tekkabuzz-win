@@ -113,7 +113,7 @@ export default function Footer() {
             <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4 font-heading">{t.gamesFooter}</h4>
             <ul className="space-y-2">
               {GAME_LINKS.map((l) => (
-                <li key={l.to}><Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">{l.label}</Link></li>
+                <li key={l.to}><Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors px-4 py-3 inline-block">{l.label}</Link></li>
               ))}
             </ul>
           </div>
@@ -123,7 +123,7 @@ export default function Footer() {
             <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4 font-heading">{t.info}</h4>
             <ul className="space-y-2">
               {INFO_LINKS.map((l) => (
-                <li key={l.to}><Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">{l.label}</Link></li>
+                <li key={l.to}><Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors px-4 py-3 inline-block">{l.label}</Link></li>
               ))}
             </ul>
           </div>
@@ -133,7 +133,7 @@ export default function Footer() {
             <h4 className="text-primary text-xs font-bold uppercase tracking-widest mb-4 font-heading">{t.legal}</h4>
             <ul className="space-y-2">
               {LEGAL_LINKS.map((l) => (
-                <li key={l.to}><Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors">{l.label}</Link></li>
+                <li key={l.to}><Link to={l.to} className="text-muted-foreground text-sm hover:text-primary transition-colors px-4 py-3 inline-block">{l.label}</Link></li>
               ))}
             </ul>
           </div>

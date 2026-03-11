@@ -54,8 +54,8 @@ export default function PromotionsSection() {
             <div key={i} className="bg-card border border-border rounded-xl p-4 md:p-6 hover:border-primary transition-all duration-300 flex flex-col text-center">
               <h3 className="font-heading text-xs md:text-lg font-bold text-primary mb-1 md:mb-2">{p.title}</h3>
               <p className="text-[10px] md:text-sm text-muted-foreground mb-3 md:mb-4 flex-1">{p.desc}</p>
-              <Link to={PROMO_LINKS[i]} className="text-[10px] md:text-xs text-muted-foreground hover:text-primary mb-2 md:mb-3 underline">{t.learnMore}</Link>
-              <Link to={CTA_LINKS[i]} className="bg-primary text-primary-foreground font-bold rounded-lg px-3 py-2 text-xs md:text-sm text-center hover:bg-gold-hover transition-all">
+              <Link to={PROMO_LINKS[i]} className="text-[10px] md:text-xs text-muted-foreground hover:text-primary mb-2 md:mb-3 underline py-3 inline-block">{t.learnMore}</Link>
+              <Link to={CTA_LINKS[i]} className="bg-primary text-primary-foreground font-bold rounded-lg px-3 py-3 text-xs md:text-sm text-center hover:bg-gold-hover transition-all">
                 {p.ctaText}
               </Link>
             </div>
