@@ -62,6 +62,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     rollupOptions: {
+      treeshake: true,
       output: {
         manualChunks: {
           vendor: ["react", "react-dom"],
@@ -73,5 +74,8 @@ export default defineConfig(({ mode }) => ({
     target: "es2020",
     cssCodeSplit: true,
     minify: "esbuild",
+    esbuildOptions: {
+      drop: ["console", "debugger"],
+    },
   },
 }));
