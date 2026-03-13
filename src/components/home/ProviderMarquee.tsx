@@ -1,6 +1,7 @@
+import { memo } from "react";
 import { PROVIDER_LOGOS } from "@/lib/images";
 
-export default function ProviderMarquee() {
+function ProviderMarqueeInner() {
   const row1 = PROVIDER_LOGOS.slice(0, 24);
   const row2 = PROVIDER_LOGOS.slice(24);
 
@@ -32,3 +33,6 @@ export default function ProviderMarquee() {
     </section>
   );
 }
+
+const ProviderMarquee = memo(ProviderMarqueeInner);
+export default ProviderMarquee;

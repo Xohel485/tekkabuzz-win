@@ -1,8 +1,8 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, memo } from "react";
 import { Link } from "react-router-dom";
 import { useBanners } from "@/hooks/useBanners";
 
-export default function BannerSlider() {
+function BannerSliderInner() {
   const banners = useBanners();
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -81,3 +81,6 @@ export default function BannerSlider() {
     </section>
   );
 }
+
+const BannerSlider = memo(BannerSliderInner);
+export default BannerSlider;
