@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { PAYMENT_ICONS } from "@/lib/images";
 import { useLocale, type Locale } from "@/hooks/useLocale";
 
@@ -7,7 +8,7 @@ const HEADINGS: Record<Locale, string> = {
   ur: 'تیز اور محفوظ <span class="text-primary">ادائیگی کے طریقے</span>',
 };
 
-export default function PaymentMethods() {
+function PaymentMethodsInner() {
   const locale = useLocale();
 
   return (
@@ -17,7 +18,7 @@ export default function PaymentMethods() {
         <div className="grid grid-cols-5 md:flex md:flex-wrap gap-3 md:gap-8 justify-center items-center">
           {PAYMENT_ICONS.map((p) => (
             <div key={p.name} className="flex flex-col items-center gap-1">
-              <img src={p.url} alt={`${p.name} payment on TekkaBuzz.win`} className="h-8 md:h-12 w-auto object-contain" loading="lazy" />
+              <img src={p.url} alt={`${p.name} payment on TekkaBuzz.win`} className="h-8 md:h-12 w-auto object-contain" loading="lazy" decoding="async" width={48} height={32} />
               <span className="text-[9px] md:text-xs text-muted-foreground">{p.name}</span>
             </div>
           ))}
@@ -26,3 +27,6 @@ export default function PaymentMethods() {
     </section>
   );
 }
+
+const PaymentMethods = memo(PaymentMethodsInner);
+export default PaymentMethods;
