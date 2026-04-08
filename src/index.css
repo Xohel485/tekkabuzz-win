@@ -1,5 +1,12 @@
 /* Google Fonts loaded non-render-blocking in index.html */
 
+/* Preloaded font with swap for performance */
+@font-face {
+  font-family: 'CameraPlain';
+  src: url('https://cdn.gpteng.co/fonts/CameraPlain.woff2') format('woff2');
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

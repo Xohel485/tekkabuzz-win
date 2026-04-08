@@ -27,7 +27,7 @@ export default function AppDownloadSection() {
           </Link>
         </div>
         <div className="shrink-0">
-          <img src="/images/tekkabuzz-win-logo.webp" alt="TekkaBuzz App" className="w-32 h-32 object-contain rounded-2xl shadow-lg border border-primary/20 bg-card p-2" loading="lazy" decoding="async" width={128} height={128} />
+          <img <img src="/images/tekabuzz-logo.webp" alt="TekkaBuzz App" className="w-32 h-32 object-contain rounded-2xl shadow-lg border border-primary/20 bg-card p-2" loading="lazy" decoding="async" width={128} height={128} /> alt="TekkaBuzz App" className="w-32 h-32 object-contain rounded-2xl shadow-lg border border-primary/20 bg-card p-2" loading="lazy" decoding="async" width={128} height={128} />
         </div>
       </div>
     </section>
