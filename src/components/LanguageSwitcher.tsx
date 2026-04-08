@@ -1,9 +1,9 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import { getLocaleFromPath, type Locale } from "@/hooks/useLocale";
-import usFlag from "@/assets/flags/us.png";
-import bdFlag from "@/assets/flags/bd.png";
-import pkFlag from "@/assets/flags/pk.png";
+import usFlag from "@/assets/flags/us.webp";
+import bdFlag from "@/assets/flags/bd.webp";
+import pkFlag from "@/assets/flags/pk.webp";
 
 const LANGUAGES: { code: Locale; label: string; flag: string }[] = [
   { code: "en", label: "English", flag: usFlag },
