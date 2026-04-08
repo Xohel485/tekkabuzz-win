@@ -47,7 +47,7 @@ export default function Navbar() {
             </button>
 
             <Link to="/" className="flex-shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg" aria-label="TekkaBuzz Home">
-              <img src={IMAGES.LOGO_HEADER} alt="TekkaBuzz.win Logo" className="h-5 sm:h-7 lg:h-10 w-auto max-w-[100px] sm:max-w-[140px] lg:max-w-none object-contain" loading="eager" width="140" height="16" />
+              <img src={IMAGES.LOGO_HEADER} alt="TekkaBuzz.win Logo" className="h-5 sm:h-7 lg:h-10 w-auto max-w-[100px] sm:max-w-[140px] lg:max-w-none object-contain" loading="eager" decoding="async" width="140" height="16" />
             </Link>
           </div>
 

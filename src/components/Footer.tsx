@@ -96,7 +96,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col items-center text-center">
             <Link to="/" aria-label="TekkaBuzz Home">
-              <img src={LOGO_CROPPED} alt="TekkaBuzz.win" className="h-8 w-auto object-contain" loading="lazy" width="280" height="32" />
+              <img src={LOGO_CROPPED} alt="TekkaBuzz.win" className="h-8 w-auto object-contain" loading="lazy" decoding="async" width="280" height="32" />
             </Link>
             <p className="text-muted-foreground text-xs leading-relaxed mt-3 mb-4">{t.footerDescription}</p>
             <div className="flex gap-2 justify-center">
@@ -146,7 +146,7 @@ export default function Footer() {
           <p className="text-muted-foreground text-xs uppercase tracking-widest">{t.paymentMethods}</p>
           <div className="flex flex-wrap gap-4 justify-center items-center">
           {PAYMENT_ICONS.map((p) => (
-              <img key={p.name} src={p.url} alt={`${p.name} payment`} className="h-8 md:h-10 w-auto object-contain bg-white/10 rounded-md px-1.5 py-1" loading="lazy" width="60" height="32" />
+              <img key={p.name} src={p.url} alt={`${p.name} payment`} className="h-8 md:h-10 w-auto object-contain bg-white/10 rounded-md px-1.5 py-1" loading="lazy" decoding="async" width="60" height="32" />
             ))}
           </div>
         </div>
@@ -160,7 +160,7 @@ export default function Footer() {
               <p className="text-muted-foreground text-[10px] uppercase tracking-widest font-medium">{t[section.titleKey]}</p>
               <div className="flex flex-wrap gap-3 justify-center items-center">
                 {section.badges.map((b) => (
-                  <img key={b.alt} src={b.src} alt={b.alt} className="h-8 md:h-10 object-contain" loading="lazy" width="40" height="32" />
+                  <img key={b.alt} src={b.src} alt={b.alt} className="h-8 md:h-10 object-contain" loading="lazy" decoding="async" width="40" height="32" />
                 ))}
               </div>
             </div>
