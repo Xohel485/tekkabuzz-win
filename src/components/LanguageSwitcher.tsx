@@ -60,8 +60,6 @@ export default function LanguageSwitcher() {
           className="w-full h-full object-cover"
           width="24"
           height="24"
-          loading="lazy"
-          decoding="async"
         />
       </button>
       {open && (
@@ -80,8 +78,6 @@ export default function LanguageSwitcher() {
                 className="w-5 h-5 rounded-full object-cover"
                 width="20"
                 height="20"
-                loading="lazy"
-                decoding="async"
               />
               <span>{lang.label}</span>
             </button>
