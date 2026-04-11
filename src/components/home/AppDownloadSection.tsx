@@ -1,16 +1,26 @@
-import { Link } from "react-router-dom";
 import { Download, Smartphone } from "lucide-react";
 import { useLocale } from "@/hooks/useLocale";
+import { usePwaInstall } from "@/hooks/usePwaInstall";
+import { Button } from "@/components/ui/button";
 
 const t = {
-  en: { title: "Download TekkaBuzz App", desc: "Install our app for the fastest gaming experience. Works on Android & iOS.", btn: "Download App" },
-  bn: { title: "TekkaBuzz অ্যাপ ডাউনলোড করুন", desc: "দ্রুততম গেমিং অভিজ্ঞতার জন্য আমাদের অ্যাপ ইন্সটল করুন।", btn: "ডাউনলোড করুন" },
-  ur: { title: "TekkaBuzz ایپ ڈاؤن لوڈ کریں", desc: "تیز ترین گیمنگ کے لیے ہماری ایپ انسٹال کریں۔", btn: "ڈاؤن لوڈ کریں" },
+  en: { title: "Download TekkaBuzz App", desc: "Install our app for the fastest gaming experience. Works on Android & iOS.", btn: "Install App Now", installed: "✅ App Installed!", iosHint: "Tap Share → Add to Home Screen" },
+  bn: { title: "TekkaBuzz অ্যাপ ডাউনলোড করুন", desc: "দ্রুততম গেমিং অভিজ্ঞতার জন্য আমাদের অ্যাপ ইন্সটল করুন।", btn: "এখনই অ্যাপ ইনস্টল করুন", installed: "✅ অ্যাপ ইন্সটল হয়ে গেছে!", iosHint: "Share → Add to Home Screen ট্যাপ করুন" },
+  ur: { title: "TekkaBuzz ایپ ڈاؤن لوڈ کریں", desc: "تیز ترین گیمنگ کے لیے ہماری ایپ انسٹال کریں۔", btn: "ابھی ایپ انسٹال کریں", installed: "✅ ایپ انسٹال ہو گئی!", iosHint: "Share → Add to Home Screen ٹیپ کریں" },
 };
 
 export default function AppDownloadSection() {
   const locale = useLocale();
   const c = t[locale];
+  const { canInstall, isInstalled, isIos, install } = usePwaInstall();
+
+  const handleInstall = async () => {
+    if (canInstall) {
+      await install();
+    } else {
+      window.location.href = "/install";
+    }
+  };
 
   return (
     <section className="py-12 px-4 md:px-8">
@@ -21,13 +31,20 @@ export default function AppDownloadSection() {
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">{c.title}</h2>
           </div>
           <p className="text-muted-foreground mb-6">{c.desc}</p>
-          <Link to="/install" className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold rounded-lg px-8 py-4 hover:bg-gold-hover transition-all gold-shimmer">
-            <Download className="w-5 h-5" />
-            {c.btn}
-          </Link>
+
+          {isInstalled ? (
+            <p className="text-primary font-bold text-lg">{c.installed}</p>
+          ) : isIos ? (
+            <p className="text-muted-foreground text-sm">{c.iosHint}</p>
+          ) : (
+            <Button onClick={handleInstall} size="lg" className="gold-shimmer font-bold text-base">
+              <Download className="w-5 h-5 mr-2" />
+              {c.btn}
+            </Button>
+          )}
         </div>
         <div className="shrink-0">
-          <img src="/images/tekabuzz-logo.webp" alt="TekkaBuzz App" className="w-32 h-32 object-contain rounded-2xl shadow-lg border border-primary/20 bg-card p-2" loading="lazy" decoding="async" width={128} height={128} />
+          <img src="/images/tekkabuzz-app-icon.webp" alt="TekkaBuzz App" className="w-32 h-32 object-contain rounded-2xl shadow-lg border border-primary/20 bg-card p-2" loading="lazy" decoding="async" width={128} height={128} />
         </div>
       </div>
     </section>
