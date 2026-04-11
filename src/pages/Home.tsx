@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import HeroSection from "@/components/home/HeroSection";
 import { ORGANIZATION_SCHEMA, WEBSITE_SCHEMA, OG_IMAGE, hreflangTags } from "@/lib/seoSchema";
+import { useLazySection } from "@/hooks/useLazySection";
 
 const Ticker = lazy(() => import("@/components/Ticker"));
 const BannerSlider = lazy(() => import("@/components/home/BannerSlider"));
@@ -10,12 +11,18 @@ const GameCategories = lazy(() => import("@/components/home/GameCategories"));
 const FeaturesSection = lazy(() => import("@/components/home/FeaturesSection"));
 const PromotionsSection = lazy(() => import("@/components/home/PromotionsSection"));
 const ProviderMarquee = lazy(() => import("@/components/home/ProviderMarquee"));
+const PaymentMethods = lazy(() => import("@/components/home/PaymentMethods"));
 const SeoContent = lazy(() => import("@/components/home/SeoContent"));
 const AppDownloadSection = lazy(() => import("@/components/home/AppDownloadSection"));
 const FaqSection = lazy(() => import("@/components/home/FaqSection"));
 const Testimonials = lazy(() => import("@/components/Testimonials").then(m => ({ default: m.Testimonials })));
 const CompetitorComparison = lazy(() => import("@/components/CompetitorComparison").then(m => ({ default: m.CompetitorComparison })));
 const SEOKeywordBlock = lazy(() => import("@/components/SEOKeywordBlock").then(m => ({ default: m.SEOKeywordBlock })));
+
+function LazyBlock({ children }: { children: React.ReactNode }) {
+  const { ref, visible } = useLazySection("300px");
+  return <div ref={ref} className="content-auto contain-layout">{visible ? children : <div style={{ minHeight: 200 }} />}</div>;
+}
 
 const FAQ_SCHEMA = {
   "@context": "https://schema.org",
@@ -70,9 +77,7 @@ export default function Home() {
         <div className="content-auto contain-layout">
           <PromotionsSection />
         </div>
-        <div className="content-auto contain-layout">
-          <ProviderMarquee />
-        </div>
+        <LazyBlock><ProviderMarquee /></LazyBlock>
         <div className="content-auto contain-layout">
           <Testimonials />
         </div>
@@ -82,6 +87,7 @@ export default function Home() {
         <div className="content-auto contain-layout">
           <AppDownloadSection />
         </div>
+        <LazyBlock><PaymentMethods /></LazyBlock>
         <div className="content-auto contain-layout">
           <SEOKeywordBlock />
         </div>
