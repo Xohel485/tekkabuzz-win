@@ -1,4 +1,5 @@
 import { Download, Smartphone } from "lucide-react";
+import { IMAGES } from "@/lib/images";
 import { useLocale } from "@/hooks/useLocale";
 import { usePwaInstall } from "@/hooks/usePwaInstall";
 import { Button } from "@/components/ui/button";
